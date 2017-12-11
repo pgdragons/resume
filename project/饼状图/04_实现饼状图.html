@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		canvas{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript" src="./lib/Ring.js"></script>
+	<script type="text/javascript" src="./lib/PieChart.js"></script>
+	<script type="text/javascript" src="./lib/calculate.js"></script>
+	<script type="text/javascript" src="./lib/Rect.js"></script>
+	<script type="text/javascript" src="./lib/randomNum.js"></script>
+	<script type="text/javascript" src="./lib/randomColor.js"></script>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var select = document.getElementsByTagName("select")[0];
+		canvas.width = 500;
+		canvas.height = 500;
+		var canvasW = canvas.width;
+		var canvasH = canvas.height;
+		var centerX = canvasW/2;
+		var centerY = canvasH/2;
+		var ringRadius =150
+		var ctx = canvas.getContext("2d");
+		// 先来绘制一个外环
+		new Ring({
+			x : centerX,
+			y : centerY,
+			radius : ringRadius,
+			startAngle : 0,
+			endAngle : 2*Math.PI,
+			strokeColor : "gray",
+			strokeWidth : 2 
+		}).render(ctx);
+		// 再来绘制扇形 --> 要根据给定的数据进行绘制
+		var data = [
+		];
+		var titles = ["吃放","睡觉","游戏","lol","cf","逛街","淘宝","天猫","苏宁","京东"];
+		var time = getRandomNum(10) + 5;
+		// 对于数据的写入使用随机
+		for(var i = 0;i<time;i++){
+			data.push({
+				cost:getRandomNum(1000),
+				txt:titles[getRandomNum(titles.length)],
+				color:getRandomColor()
+			});
+		}
+		var sum = calculateSum(data);
+		// 根据数据,使用循环,进行扇形的绘制
+		var startAngle = -90;
+		var endAngle = 0;
+		for(var i=0;i<data.length;i++){
+			// 根据下标从数组中获取每一项中保存的数据
+			var item = data[i];
+			// 计算得到对应的endAngle值
+			angle = item.cost / sum * 360;
+			// 使用数学中提供的三角函数,计算文本绘制的x以及y
+			var txtX = centerX + Math.cos((startAngle + angle/2)*Math.PI/180) * (ringRadius + 20);
+			var txtY = centerX + Math.sin((startAngle + angle/2)*Math.PI/180) * (ringRadius + 20);
+			var pieChart = new PieChart({
+				x : centerX,
+				y : centerY,
+				radius : ringRadius - 20,
+				startAngle : startAngle*Math.PI/180,
+				endAngle : (angle + startAngle)*Math.PI/180,
+				color : item.color,
+				txt : item.txt,
+				txtX : txtX,
+				txtY : txtY
+			});
+			pieChart.render(ctx);
+			console.log(startAngle + "  ---  " + angle);
+			startAngle += angle ;
+		}
+		// 再来顶部位置绘制矩形以及文本内容
+		var startY = (canvasH - data.length * 30) / 2;
+		for(var i=0;i<data.length;i++){
+			var item = data[i];
+			var h = 20
+			var rect = new Rect({
+				x : 10,
+				y : startY + i*30,
+				w : 10,
+				h : h,
+				fillColor : item.color,
+				strokeWidth : 1,
+				txt : item.txt
+			});	
+			rect.render(ctx);
+		}
+	</script>
+</body>
+</html>

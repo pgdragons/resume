@@ -1,0 +1,40 @@
+#content-model .play3C{
+	width: 1165px;
+	height: 530px;
+	margin-top: 20px;
+}
+/*3c左侧*/
+#content-model .play3C-left{
+	width: 580px;
+	height: 530px;
+	background-color: #fff;
+	margin-right: 5px;
+}
+#content-model .play3C-left .top{
+	width: 580px;
+	height: 58px;
+	background-color: #3aaba9;
+	line-height: 58px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#content-model .play3C .top a:hover{
+	border: 1px solid #fff;
+	text-decoration: none !important;
+}
+/*3c右侧*/
+#content-model .play3C-right{
+	width: 580px;
+	height: 530px;
+	background-color: #fff;
+}
+.play3C-right .top{
+	width: 580px;
+	height: 58px;
+	background-color: #447e6c;
+	line-height: 58px;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}

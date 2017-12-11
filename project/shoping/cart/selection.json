@@ -1,0 +1,90 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M393.602 900.262c0 49.485-40.114 89.599-89.599 89.599s-89.599-40.114-89.599-89.599c0-49.485 40.114-89.599 89.599-89.599s89.599 40.114 89.599 89.599z",
+          "M990.928 900.262c0 49.485-40.114 89.599-89.599 89.599s-89.599-40.114-89.599-89.599c0-49.485 40.114-89.599 89.599-89.599s89.599 40.114 89.599 89.599z",
+          "M990.928 512v-358.396h-716.791c0-32.989-26.743-59.733-59.733-59.733h-179.198v59.733h119.465l44.869 384.579c-27.341 21.894-44.869 55.533-44.869 93.282 0 65.982 53.487 119.465 119.465 119.465h716.791v-59.733h-716.791c-32.989 0-59.733-26.743-59.733-59.733 0-0.203 0.013-0.407 0.015-0.612l776.509-118.853z"
+        ],
+        "tags": [
+          "cart",
+          "purchase",
+          "ecommerce",
+          "shopping"
+        ],
+        "defaultCode": 59706,
+        "grid": 16,
+        "attrs": [
+          {},
+          {},
+          {}
+        ],
+        "width": 1056,
+        "isMulticolor": false,
+        "isMulticolor2": false
+      },
+      "attrs": [
+        {},
+        {},
+        {}
+      ],
+      "properties": {
+        "ligatures": "cart, purchase",
+        "name": "cart",
+        "order": 4,
+        "id": 59,
+        "prevSize": 14,
+        "code": 127761
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 58
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "cart"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "cart",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "showSelector": false,
+      "showMetrics": false,
+      "showMetadata": false,
+      "showVersion": false,
+      "includeMetadata": true
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "showGrid": false
+  }
+}

@@ -1,0 +1,217 @@
+/*点击登录*/
+.login{
+    padding: 30px 20px 20px;
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    left:50%;
+    top:70px;
+    margin-left: -180px;
+    overflow: hidden;
+    display: none;
+    /*border: 1px solid #999;*/
+    box-shadow: 3px 3px 50px 2px #5e5e5e;
+    background-color: #eeeeee;
+}
+/*登录头部*/
+.login .login-header{
+    width: 100%;
+    height: 30px;
+    background-color: #eeeeee;
+}
+.login .login-header h4{
+    font-size: 20px;
+    font-weight:600;
+    height: 30px;
+    line-height:30px;
+}
+/*内容*/
+/*输入账号密码*/
+.login .login-content{
+    position: relative;
+    height: 250px;
+    margin-top:20px;
+}
+.login .login-content .login-show{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.login .login-content .input{
+    width: 100%;
+    height: 40px;
+    margin-top:20px;
+    position: relative;
+}
+/*图标*/
+.login .login-content .input .user,.psw{
+    width: 38px;
+    height: 38px;
+    background-color: #999;
+    color:#fff;
+    font-size: 20px;
+    position: absolute;;
+    left:1px;
+    top: 1px;
+    text-align: center;
+    line-height:38px;
+}
+.login .login-content input{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px 5px 50px;
+    border:1px solid #999;
+}
+/*小圆点删除账号密码*/
+.login .login-content .input .delete{
+    width: 20px;
+    height: 20px;
+    background-color: #5e5e5e;
+    border-radius:10px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    font-size: 14px;
+    line-height:19px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+/*登入按钮*/
+.login .login-content .btn{
+    display: block;
+    width: 100%;
+    line-height:30px;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: orange;
+    padding:8px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.login .login-content .btn:hover{
+    color: #fff !important;
+}
+/*登录方式*/
+.login  p{
+    color:#000;
+}
+.login .login-content .login-show p:hover{
+    color:red;
+}
+.login .login-content .login-method{
+    width: 100%;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.login .login-content .login-method .method{
+    flex:1;
+}
+.login .login-content .login-method .method img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+}
+.login .login-content .login-method .method a{
+    text-decoration: none;
+    display: inherit;
+    white-space: nowrap;
+}
+.login .login-content .login-method .method p{
+    overflow: hidden;
+}
+/*尾部*/
+/*忘记密码*/
+.login .login-footer{
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+.login .login-footer .forget-password{
+    width: 100%;
+    margin-top:20px;
+    white-space: nowrap;
+}
+.login .login-footer .forget-password p{
+    margin-right: 20px;
+}
+.login .login-footer p:hover{
+    color:red;
+}
+/*删除界面*/
+.login .login-footer .btn-err{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    right:0;
+    bottom:0;
+    cursor: pointer;
+    font-size: 30px;
+    opacity: 0.6;
+}
+.login .login-footer .btn-err:hover{
+    opacity: 1;
+}
+/*扫一扫 右上角图标========================*/
+.login .icon-sys{
+    position: absolute;
+    right:0;
+    top:0;
+}
+.login .icon-sys img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+/*登录隐藏界面=================================*/
+.login-hide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+/*中间扫一扫*/
+.login-hide .login-sys{
+    display: flex;
+    justify-content: center;
+}
+.login-hide .login-sys img{
+    width: 140px;
+    height: 140px;
+}
+/*手机扫一扫*/
+.login-hide .phone-sys{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.login-hide .phone-sys img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.login-hide .phone-sys div{
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.login-hide .phone-sys div p{
+    flex:1;
+    height: 13px;
+    white-space: nowrap;
+}
+.login-hide .phone-sys div p span:hover{
+    color:red;
+    cursor: pointer;
+}

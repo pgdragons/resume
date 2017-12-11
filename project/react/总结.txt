@@ -1,0 +1,7 @@
+通过npm管理应用
+a> 新建一个文件夹 
+b> 进入到这个文件夹中 , 按住shift + 鼠标右键 , 打开命令窗口
+c> 输入npm init 初始化项目 , 并且添加npm管理
+d> 新建一个html文件 , 在这个html文件中 , 去引入打包好的js文件
+e> 再来新建一个文件 , 这个文件名称是固定的  webpack.config.js  设定webpack工具的配置执行文件
+f> 在新建的webpack.config.js文件中 , 去设定好所要打包的具体的js文件 以及 打包后生成的js文件

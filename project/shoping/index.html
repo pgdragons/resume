@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>购物商城</title>
+    <script type="text/javascript" >
+           var phone = document.getElementsByTagName('html')[0];
+           phone.style.fontSize = document.documentElement.clientWidth/1200 + "px";
+    </script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css"><!--登录窗口-->
+    <link rel="stylesheet" href="cart/style.css"><!--字体图标-->
+    <link rel="stylesheet" href="css/search.css"><!--搜索框-->
+    <link rel="stylesheet" href="css/goodTypeAndAds.css"><!--商品类型 ads-->
+    <link rel="stylesheet" href="css/content_scareBuying.css"><!--商品类型 ads-->
+    <link rel="stylesheet" href="css/menu-content.css"><!--商品类型 ads-->
+    <link rel="stylesheet" href="css/content_find.css"><!--发现-->
+    <link rel="stylesheet" href="css/electrical.css" /><!--家电-->
+    <link rel="stylesheet" href="css/numerals.css" /><!--数码-->
+    <link rel="stylesheet" href="css/3C.css" /><!--3C-->
+    <link rel="stylesheet" href="css/food.css" /><!--food-->
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fixed.css"><!--左侧边栏-->
+    
+</head>
+<body style="background-color: #eee;">
+    <div id="box">
+        <div id="none"></div>
+        <!--头部 导航-->
+        <div class="row" style="background-color: #e0e0e0;">
+            <div class="container">
+                <!--头部-->
+                <header>
+                    <!--左侧-->
+                    <!--<div class="header-left fl">-->
+                        <!--<div href="#" class="dropdown">-->
+                                <!--<a href="#" class="dropdown-toggle"-->
+                                   <!--data-toggle="dropdown"-->
+                                   <!--role="button"-->
+                                   <!--aria-haspopup="true"-->
+                                   <!--aria-expanded="true">网址导航-->
+                                    <!--<span class="caret"></span>-->
+                                <!--</a>-->
+                                <!--<ul class="dropdown-menu">-->
+                                    <!--<li><a href="#"><p></p>天猫商城</a></li>-->
+                                    <!--<li><a href="#"><p></p>淘宝</a></li>-->
+                                    <!--<li><a href="#"><p></p>京东商城</a></li>-->
+                                    <!--<li><a href="#"><p></p>聚 划 算</a></li>-->
+                                    <!--<li><a href="#"><p></p>苏宁易购</a></li>-->
+                                    <!--<li><a href="#"><p></p>国美在线</a></li>-->
+                                <!--</ul>-->
+                        <!--</div>-->
+                        <!--<a href="#">-->
+                            <!--<p class="text-center">商家入驻</p>-->
+                        <!--</a>-->
+                    <!--</div>-->
+                    <!--右侧导航栏-->
+                    <nav class=" nav navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <!--页面缩小显示更多按钮-->
+                                <button type="button" class="navbar-toggle collapsed"
+                                        data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1"
+                                        aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="navbar-brand fl">
+                                    <!--网址导航-->
+                                    <div class="header-left ">
+                                        <div href="#" class="dropdown">
+                                            <a href="#" class="dropdown-toggle"
+                                               data-toggle="dropdown"
+                                               role="button"
+                                               aria-haspopup="true"
+                                               aria-expanded="true">网址导航
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="https://www.tmall.com"><img src="images/shop-logo/tianMao-logo.png" alt="">天猫商城</a></li>
+                                                <li><a href="https://www.taobao.com"><img src="images/shop-logo/taoBao-logo.webp" alt="">淘宝</a></li>
+                                                <li><a href="https://www.jd.com"><img src="images/shop-logo/JD-logo.png" alt="">京东商城</a></li>
+                                                <li><a href="https://ju.taobao.com"><img src="images/shop-logo/juHuaSuan.png" alt="">聚 划 算</a></li>
+                                                <li><a href="https://www.suning.com"><img src="images/shop-logo/suNingYiGou-logo.png" alt="">苏宁易购</a></li>
+                                                <li><a href="http://www.gome.com.cn"><img src="images/shop-logo/guoMeiZaiXian-logo.png" alt="">国美在线</a></li>
+                                                <li><a href="http://www.vip.com"><img src="images/shop-logo/weiPinHui-logo.png" alt="">唯品会</a></li>
+                                            </ul>
+                                        </div>
+                                        <a class="fl" href="#">
+                                            <p class="text-center">商家入驻</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--右侧nav-->
+                            <div class="collapse navbar-collapse fr" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">首页</a></li>
+                                    <li id="login"><a href="#">登录</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle"
+                                           data-toggle="dropdown"
+                                           role="button"
+                                           aria-haspopup="true"
+                                           aria-expanded="false">我的订单
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">待支付</a></li>
+                                            <li><a href="#">待收货</a></li>
+                                            <li><a href="#">待评价</a></li>
+                                            <li><a href="#">修改订单</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><span class="icon-cart"></span>购物车</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle"
+                                           data-toggle="dropdown"
+                                           role="button"
+                                           aria-haspopup="true"
+                                           aria-expanded="false">
+                                            <span class="glyphicon glyphicon-star"></span>
+                                            收藏夹
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">收藏的宝贝</a></li>
+                                            <li><a href="#">收藏的店铺</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">客服联系</a></li>
+                                    <li><a href="#">商品分类</a></li>
+                                    <li><a href="#">企业采购</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </header>
+                <!--登录-->
+                <div class="login">
+                    <div class="login-header">
+                        <h4>密码登录</h4>
+                    </div>
+                    <div class="login-content">
+                        <!--正面显示内容-->
+                        <div class="login-show">
+                            <div class="input">
+                                <span class="glyphicon glyphicon-user user"></span>
+                                <input class="account" type="text" placeholder="请输入账号">
+                                <span class="delete">x</span>
+                            </div>
+                            <div class="input">
+                                <span class="glyphicon glyphicon-lock psw"></span>
+                                <input class="password" type="text" placeholder="请输入密码">
+                                <span class="delete">x</span>
+                            </div>
+                            <a href="#" class="btn">登录</a>
+                            <!-- 登录方式 -->
+                            <div class="login-method">
+                                <div class="method">
+                                    <a href="#">
+                                        <img src="images/login/login-weiBo.png" alt="">
+                                        <p>微博登录</p>
+                                    </a>
+                                </div>
+                                <div class="method ">
+                                    <a href="#">
+                                        <img src="images/login/login-QQ.png" alt="">
+                                        <p>QQ登录</p>
+                                    </a>
+                                </div>
+                                <div class="method ">
+                                    <a href="#">
+                                        <img src="images/login/login-zhiFuBao.webp" alt="">
+                                        <p>支付宝登录</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--登录隐藏界面-->
+                        <div class="login-hide">
+                            <div class="login-sys">
+                                <img src="./images/login/sys.png" alt="">
+                            </div>
+                            <div class="phone-sys">
+                                <img src="./images/login/sys-2.png" alt="">
+                                <div>
+                                    <p>打开&#12288<span class="text-danger">手机淘宝</span> | <span class="text-danger">手机天猫</span></p>
+                                    <p>扫一扫登录</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-footer">
+                        <div class="forget-password">
+                            <a href="#">
+                                <p class="fl">忘记密码?</p>
+                            </a>
+                            <a href="#">
+                                <p class="fl">免费注册</p>
+                            </a>
+                        </div>
+                        <div class="btn-err">×</div>
+                    </div>
+                    <!--扫一扫-->
+                    <div class="icon-sys">
+                        <img src="images/login/二维码-1.png" alt="">
+                    </div>
+                </div><!--login-->
+            </div>
+        </div>
+        <!--搜索层-->
+        <div id="search" class="bkg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="search-top">
+                        <!--logo-->
+                        <div class="col-lg-2 col-md-2  col-xs-2 logo bkg-purple">
+                            <h3>商城购物中心</h3>
+                        </div>
+                        <!--搜索层-->
+                        <div class="col-lg-8 col-md-8 col-xs-8 search-top-center">
+                            <!-- 搜索框 -->
+                            <div class="input-search">
+                                <input class="col-md-9 col-sm-9  col-xs-9" type="text" name="" id="">
+                                <a href="#" class="btn bkg-red col-md-2 col-sm-2  col-xs-2">搜索</a>
+                            </div>
+                            <!--推荐商品-->
+                            <div class="recommend-good">
+                                <ul>
+                                    <li><a class="text-red" href="#">德国进口巧克力</a></li>
+                                    <li><a href="#">夏装女t恤</a></li>
+                                    <li><a href="#">连衣裙冬</a></li>
+                                    <li><a href="#">白运动鞋</a></li>
+                                    <li><a class="text-red" href="#">四件套</a></li>
+                                    <li><a href="#">背心男</a></li>
+                                    <li><a href="#">乳胶床垫</a></li>
+                                    <li><a href="#">零食</a></li>
+                                    <li><a href="#">iphone7</a></li>
+                                    <li><a href="#">挎包</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--搜索框右侧-->
+                        <div class="col-lg-2 col-md-2 col-xs-2 search-top-right">
+                            <img src="images/search/search-right.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--搜索层底部标题导航-->
+                    <div class="title-nav">
+                        <h4 class="text-center col-lg-2 col-md-2 col-sm-3 col-xs-4">商品分类</h4>
+                        <ul class="col-lg-8 col-md-8 col-sm-9 col-xs-10">
+                            <li class=""><a href="#">抢购</a></li>
+                            <li class=""><a href="#">优惠券</a></li>
+                            <li class=""><a href="#">闪购</a></li>
+                            <li class=""><a href="#">拍卖</a></li>
+                            <li class="text-gray"><span>|</span></li>
+                            <li class=""><a href="#">服装城</a></li>
+                            <li class=""><a href="#">生鲜</a></li>
+                            <li class=""><a href="#">全球购</a></li>
+                            <li class=""><a href="#">智能生活</a></li>
+                            <li class="text-gray"><span>|</span></li>
+                            <li class=""><a href="#">金融</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--商品分类、 ads广告轮播-->
+        <article id="goodTypeAndAds">
+            <div class="container">
+                <div  class="row">
+                    <!--商品分类-->
+                    <div class="goodType col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <ul>
+                            <li><a href="#">家用电器</a></li>
+                            <li>
+                                <a href="#">手机</a>
+                                <span>/</span>
+                                <a href="#">运营商</a>
+                                <span>/</span>
+                                <a href="#">数码</a>
+                            </li>
+                            <li>
+                                <a href="#">电脑</a>
+                                <span>/</span>
+                                <a href="#">榜办公</a>
+                            </li>
+                             <li>
+                                <a href="#">家居</a>
+                                <span>/</span>
+                                <a href="#">家具</a>
+                                <span>/</span>
+                                <a href="#">家装</a>
+                                <span>/</span>
+                                <a href="#">厨具</a>
+                            </li>
+                            <li>
+                                <a href="#">男装</a>
+                                <span>/</span>
+                                <a href="#">女装</a>
+                                <span>/</span>
+                                <a href="#">童装</a>
+                                <span>/</span>
+                                <a href="#">内衣</a>
+                            </li>
+                            <li>
+                                <a href="#">美妆</a>
+                                <span>/</span>
+                                <a href="#">宠物</a>
+                            </li>
+                            <li>
+                                <a href="#">女鞋</a>
+                                <span>/</span>
+                                <a href="#">箱包</a>
+                                <span>/</span>
+                                <a href="#">钟表</a>
+                                <span>/</span>
+                                <a href="#">珠宝</a>
+                            </li>
+                            <li>
+                                <a href="#">男鞋</a>
+                                <span>/</span>
+                                <a href="#">运动</a>
+                                <span>/</span>
+                                <a href="#">户外</a>
+                            </li>
+                            <li>
+                                <a href="#">汽车</a>
+                                <span>/</span>
+                                <a href="#">汽车用品</a>
+                            </li>
+                            <li>
+                                <a href="#">母婴</a>
+                                <span>/</span>
+                                <a href="#">玩具乐器</a>
+                                <span>/</span>
+                            </li>
+                            <li>
+                                <a href="#">食品</a>
+                                <span>/</span>
+                                <a href="#">酒类</a>
+                                <span>/</span>
+                                <a href="#">生鲜</a>
+                                <span>/</span>
+                                <a href="#">特产</a>
+                            </li>
+                            <li>
+                                <a href="#">礼品鲜花</a>
+                                <span>/</span>
+                                <a href="#">农资绿植</a>
+                            </li>
+                            <li>
+                                <a href="#">医药保健</a>
+                                <span>/</span>
+                                <a href="#">计生情趣</a>
+                            </li>
+                            <li>
+                                <a href="#">图书</a>
+                                <span>/</span>
+                                <a href="#">音像</a>
+                                <span>/</span>
+                                <a href="#">旅游</a>
+                                <span>/</span>
+                                <a href="#">生活</a>
+                            </li>
+                            <li>
+                                <a href="#">理财</a>
+                                <span>/</span>
+                                <a href="#">众筹</a>
+                                <span>/</span>
+                                <a href="#">白条</a>
+                                <span>/</span>
+                                <a href="#">保险</a>
+                            </li>
+                        </ul>
+                    </div><!--goodType-->
+                    <!-- ads -->
+                    <div id="ads" class="col-lg-8 col-md-8 col-sm-6 col-xs-4">
+                        <!-- <div class="scroll-ads">
+                            <ul>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                                <li><a href="#"><img src="" alt=""></a></li>
+                            </ul>
+                        </div> -->
+                        <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+                            <!-- &lt;!&ndash; Indicators &ndash;&gt; -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            </ol>
+
+                            <!-- &lt;!&ndash; Wrapper for slides &ndash;&gt; -->
+                            <div class="carousel-inner " role="listbox">
+                                <div class="item active">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="" alt="">
+                                </div>
+                            </div><!--carousel-inner-->
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <!-- <span class="sr-only">Previous</span> -->
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <!-- <span class="sr-only">Next</span> -->
+                            </a>
+                        </div><!-- ads -->
+                        <div class="ads-bottom">
+                            <ul>
+                                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#"><img src="" alt=""></a></li>
+                                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#"><img src="" alt=""></a></li>
+                                <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#"><img src="" alt=""></a></li>
+                            </ul>
+                        </div>
+  <!--隐藏商品类型==============================-->
+                        <div class="menu-content">
+                            <div class="fl">
+                                <!-- 标题 -->
+                                <div class="cate">
+                                    <a href="#">家电馆 &gt</a>
+                                    <a href="#">品牌日 &gt</a>
+                                    <a href="#">智能生活馆 &gt</a>
+                                    <a href="#">商城进化馆 &gt</a>
+                                    <a href="#">城镇体验馆 &gt</a>
+                                    <a href="#">家电众筹馆 &gt</a>
+                                </div>
+                                <!-- 中间内容 -->
+                                <div class="center-ads">
+                                    <dl>
+                                        <dt><a href="#">电视 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">合资品牌</a>
+                                            <a href="#">国产品牌</a>
+                                            <a href="#">互联网品牌</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">空调 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">壁挂式空调</a>
+                                            <a href="#">柜式空调</a>
+                                            <a href="#">中央空调</a>
+                                            <a href="#">空调配件</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">洗衣机 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">滚筒洗衣机</a>
+                                            <a href="#">洗烘一体机</a>
+                                            <a href="#">波轮洗衣机</a>
+                                            <a href="#">洗衣机配件</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">冰箱 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">多门</a>
+                                            <a href="#">对开门</a>
+                                            <a href="#">三门</a>
+                                            <a href="#">双门</a>
+                                            <a href="#">冷柜/冰吧</a>
+                                            <a href="#">酒柜</a>
+                                            <a href="#">冰箱配件</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">厨卫大电 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">油烟机</a>
+                                            <a href="#">燃气灶</a>
+                                            <a href="#">烟灶套装</a>
+                                            <a href="#">消毒柜</a>
+                                            <a href="#">洗碗机</a>
+                                            <a href="#">电热水器</a>
+                                            <a href="#">燃气热水器</a>
+                                            <a href="#">嵌入式厨电</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">厨卫小电 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">电饭煲</a>
+                                            <a href="#">微波炉</a>
+                                            <a href="#">电烤箱</a>
+                                            <a href="#">电压力锅</a>
+                                            <a href="#">豆浆机</a>
+                                            <a href="#">咖啡机</a>
+                                            <a href="#">面包机</a>
+                                            <a href="#">榨汁机</a>
+                                            <a href="#">电饼铛</a>
+                                            <a href="#">养生壶/煎药壶</a>
+                                            <a href="#">酸奶机</a>
+                                            <a href="#">煮蛋器</a>
+                                            <a href="#">电水壶/热水瓶</a>
+                                            <a href="#">电炖锅</a>
+                                            <a href="#">多用途锅</a>
+                                            <a href="#">电烧烤炉</a>
+                                            <a href="#">电热饭盒</a>
+                                            <a href="#">其他厨房电器</a>
+                                        </dd>
+                                        <div class="cl"></div>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">生活电器 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">电饭煲</a>
+                                            <a href="#">微波炉</a>
+                                            <a href="#">电烤箱</a>
+                                            <a href="#">电压力锅</a>
+                                            <a href="#">豆浆机</a>
+                                            <a href="#">咖啡机</a>
+                                            <a href="#">面包机</a>
+                                            <a href="#">榨汁机</a>
+                                            <a href="#">电饼铛</a>
+                                            <a href="#">酸奶机</a>
+                                            <a href="#">煮蛋器</a>
+                                            <a href="#">电炖锅</a>
+                                            <a href="#">多用途锅</a>
+                                            <a href="#">电烧烤炉</a>
+                                            <a href="#">电热饭盒</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">个体健康 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">电饭煲</a>
+                                            <a href="#">微波炉</a>
+                                            <a href="#">电烤箱</a>
+                                            <a href="#">电压力锅</a>
+                                            <a href="#">豆浆机</a>
+                                            <a href="#">咖啡机</a>
+                                            <a href="#">面包机</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">家庭影音 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">电饭煲</a>
+                                            <a href="#">微波炉</a>
+                                            <a href="#">电烤箱</a>
+                                            <a href="#">电压力锅</a>
+                                            <a href="#">豆浆机</a>
+                                            <a href="#">咖啡机</a>
+                                            <a href="#">面包机</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">进口电器 &gt</a></dt>
+                                        <dd>
+                                            <a href="#">电饭煲</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!-- 右侧小图 -->
+                            <div  class="right-smallImg fl">
+                                <div class="menu-logo">
+                                    <a href="#"><img src="./images/menu/menu-logo_1.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_2.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_3.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_4.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_5.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_6.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_7.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-logo_8.jpg" alt="" /></a>
+                                </div>
+                                <div class="menu-smallImg">
+                                    <a href="#"><img src="./images/menu/menu-smallImg_1.jpg" alt="" /></a>
+                                    <a href="#"><img src="./images/menu/menu-smallImg_2.jpg" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- id=ads -->
+                    <!-- 右侧图片及服务 -->
+                    <div class="ads-right col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                        <div class="right-big-img">
+                            <img src="" alt="">
+                        </div>
+                        <!-- 各个服务 -->
+                        <div class="services">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--row-->
+            </div>
+        </article>
+        <!--内容部分-->
+        <content>
+            <div class="container">
+                <div class="row">
+                    <!--限时抢购-->
+                    <section class="scare-buying">
+                        <div class="top"><h3>限时抢购</h3></div>
+                        <ul></ul>
+                    </section>
+                    <!--发现-->
+                    <section class="find">
+                        <div id="find-life-left" class="fl">
+                            <div class="find-life-header">
+                                <h3>发现好货</h3>
+                                <a href="">
+                                    <p class="right-txt">发现品质生活</p>
+                                    <i class="icon-ri"></i>
+                                </a>
+                            </div>
+                            <ul class="find-life-concent"></ul>
+                        </div>
+                        <div id="find-life-center" class="fl">
+                            <div class="find-life-header">
+                                <h3>优品专辑</h3>
+                                <a href="">
+                                    <p class="right-txt">专辑</p>
+                                    <i class="icon-ri"></i>
+                                </a>
+                            </div>
+                            <div class="find-life-concent">
+
+                            </div>
+                        </div>
+                        <div id="find-life-right" class="fl">
+                            <div class="find-life-header">
+                                <h3>乐享生活</h3>
+                                <a href="">
+                                    <p class="right-txt">排行榜</p>
+                                    <i class="icon-ri"></i>
+                                </a>
+                            </div>
+                            <div class="find-life-concent">
+                                <span></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="content-model">
+                        <ul>
+                            <li>
+                                <!-- 家用电器 -->
+                                <div class="electrical">
+                                    <!-- 左侧家用电器 -->
+                                    <div class="electrical-left fl">
+                                        <div class="top">
+                                            <h3 class="fl">家电馆</h3>
+                                            <div class="icon-sys fl"><img src="images/content-model/pt_qrcode@1x.png" alt="" /></div>
+                                            <a class="fr" href="#">最高减2000</a>
+                                            <a class="fr" href="#">个护健康</a>
+                                            <a class="fr" href="#">美的</a>
+                                        </div>
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/家电01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/家电1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/家电2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/家电3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/家电4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/家电5.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电7.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 右侧家用电器 -->
+                                    <div class="electrical-right fr">
+                                        <div class="top fl">
+                                            <h3 class="fl">搞机派</h3>
+                                            <div class="icon-sys fl"><img src="images/content-model/pt_qrcode@1x.png" alt="" /></div>
+                                            <a class="fr" href="#">后置双摄像</a>
+                                            <a class="fr" href="#">拍照神器</a>
+                                            <a class="fr" href="#">快速充电</a>
+                                            <a class="fr" href="#">金属机身</a>
+                                        </div>
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/手机01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/手机1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/手机2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/手机3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/手机4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/手机6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机7.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机8.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 数码 -->
+                                <div class="numerals">
+                                    <div class="top fl">
+                                        <h3 class="fl">电脑数码</h3>
+                                        <div class="icon-sys fl"><img src="images/content-model/pt_qrcode@1x.png" alt="" /></div>
+                                        <a class="fr" href="#">照片冲印</a>
+                                        <a class="fr" href="#">全球智选</a>
+                                        <a class="fr" href="#">摄影社区</a>
+                                        <a class="fr" href="#">电子教育</a>
+                                        <a class="fr" href="#">二合一平板</a>
+                                        <a class="fr" href="#">虚拟实现</a>
+                                        <a class="fr" href="#">女神频道</a>
+                                        <a class="fr" href="#">职场焕新</a>
+                                        <a class="fr" href="#">装机大师</a>
+                                        <a class="fr" href="#">游戏极品</a>
+                                        <a class="fr" href="#">电脑馆</a>
+                                        <a class="fr" href="#">IT精选</a>
+                                    </div>
+                                    <!-- 左边数码 -->
+                                    <div class="numerals-left fl">
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/家电01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/家电1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/家电2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/家电3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/家电4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/家电5.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电7.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 右边数码 -->
+                                    <div class="numerals-right fl">
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/手机01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/手机1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/手机2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/手机3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/手机4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/手机6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机7.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机8.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 玩3c -->
+                                <div class="play3C">
+                                    <!-- 3c左侧 -->
+                                    <div class="play3C-left fl">
+                                        <div class="top">
+                                            <h3 class="fl">玩3C</h3>
+                                            <div class="icon-sys fl"><img src="images/content-model/pt_qrcode@1x.png" alt="" /></div>
+                                            <a class="fr" href="#">手机</a>
+                                            <a class="fr" href="#">电脑办公</a>
+                                            <a class="fr" href="#">数码</a>
+                                            <a class="fr" href="#">问卷调研</a>
+                                            <a class="fr" href="#">二手优品</a>
+                                        </div>
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/家电01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/家电1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/家电2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/家电3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/家电4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/家电5.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电7.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 3c右侧 -->
+                                    <div class="play3C-right fr">
+                                        <div class="top fl">
+                                            <h3 class="fl">爱运动</h3>
+                                            <div class="icon-sys fl"><img src="images/content-model/pt_qrcode@1x.png" alt="" /></div>
+                                            <a class="fr" href="#">跑步鞋</a>
+                                            <a class="fr" href="#">冲锋衣</a>
+                                            <a class="fr" href="#">动感单车</a>
+                                            <a class="fr" href="#">电动车</a>
+                                            <a class="fr" href="#">户外风衣</a>
+                                        </div>
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/手机01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/手机1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/手机2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/手机3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/手机4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/手机6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机7.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机8.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 爱吃 -->
+                                <div class="food">
+                                    <div class="top fl">
+                                        <h3 class="fl">爱吃</h3>
+                                        <div class="icon-sys fl"><img src="images/content-model/pt_qrcode@1x.png" alt="" /></div>
+                                        <a class="fr" href="#">鸡蛋</a>
+                                        <a class="fr" href="#">北极虾</a>
+                                        <a class="fr" href="#">奇异果</a>
+                                        <a class="fr" href="#">橙子</a>
+                                        <a class="fr" href="#">红酒</a>
+                                        <a class="fr" href="#">白酒</a>
+                                        <a class="fr" href="#">饼干蛋糕</a>
+                                        <a class="fr" href="#">糖果巧克力</a>
+                                        <a class="fr" href="#">粮油调味</a>
+                                        <a class="fr" href="#">休闲零食</a>
+                                        <a class="fr" href="#">冲饮牛奶</a>
+                                        <a class="fr" href="#">坚果蜜饯</a>
+                                    </div>
+                                    <!-- 左边 -->
+                                    <div class="food-left fl">
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/家电01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/家电1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/家电2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/家电3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/家电4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/家电5.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/家电7.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 右边 -->
+                                    <div class="food-right fl">
+                                        <div class="concent fl">
+                                            <a class="bigImg fl" href="#">
+                                                <img src="images/content-model/手机01.jpg" alt="" />
+                                            </a>
+                                            <div class="list">
+                                                <a href="#">
+                                                    <p class="tit">秒杀限量</p>
+                                                    <span class="promo">0元预约</span>
+                                                    <img src="images/content-model/手机1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">生活小电</p>
+                                                    <span class="promo">净化器免费试用</span>
+                                                    <img src="images/content-model/手机2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">空调超品日</p>
+                                                    <span class="promo">最高减1000</span>
+                                                    <img src="images/content-model/手机3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <p class="tit">冰箱洗衣机</p>
+                                                    <span class="promo">每满1000减100</span>
+                                                    <img src="images/content-model/手机4.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="bottomImg fl">
+                                                <a href="#"><img src="images/content-model/手机6.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机7.jpg"alt="" /></a>
+                                                <a href="#"><img src="images/content-model/手机8.jpg"alt="" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="concent-logo fl">
+                                            <a class="fl btnleft" href="#">&lt</a>
+                                            <a class="fr btnright" href="#">&gt</a>
+                                            <div class="logo">
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo1.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo2.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo3.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo4.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo5.jpg" alt="" />
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/content-model/家电logo6.jpg" alt="" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div><!--row-->
+            </div>
+        </content>
+        <!--底部-->
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="mod-item">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <i class="icon-duo"></i>
+                            <h5>品类齐全，轻松购物</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <i class="icon-kuai"></i>
+                            <h5>多仓直发，极速配送</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <i class="icon-hao"></i>
+                            <h5>正品行货，精致服务</h5>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <i class="icon-sheng"></i>
+                            <h5>天天低价，畅选无忧</h5>
+                        </div>
+                    </div>
+                    <div class="mod-help">
+                        <dl class="col-lg-2 col-md-2 col-sm-2 ">
+                            <dt><a href="#">购物指南</a></dt>
+                            <dd>
+                                <a href="#">购物流程</a>
+                                <a href="#">会员介绍</a>
+                                <a href="#">生活旅行</a>
+                                <a href="#">常见问题</a>
+                                <a href="#">大家电</a>
+                                <a href="#">联系客服</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-lg-2 col-md-2 col-sm-2 ">
+                            <dt><a href="#">购物指南</a></dt>
+                            <dd>
+                                <a href="#">购物流程</a>
+                                <a href="#">会员介绍</a>
+                                <a href="#">生活旅行</a>
+                                <a href="#">常见问题</a>
+                                <a href="#">大家电</a>
+                                <a href="#">联系客服</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-lg-2 col-md-2 col-sm-2 ">
+                            <dt><a href="#">购物指南</a></dt>
+                            <dd>
+                                <a href="#">购物流程</a>
+                                <a href="#">会员介绍</a>
+                                <a href="#">生活旅行</a>
+                                <a href="#">常见问题</a>
+                                <a href="#">大家电</a>
+                                <a href="#">联系客服</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-lg-2 col-md-2 col-sm-2 ">
+                            <dt><a href="#">购物指南</a></dt>
+                            <dd>
+                                <a href="#">购物流程</a>
+                                <a href="#">会员介绍</a>
+                                <a href="#">生活旅行</a>
+                                <a href="#">常见问题</a>
+                                <a href="#">大家电</a>
+                                <a href="#">联系客服</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-lg-2 col-md-2 col-sm-2 ">
+                            <dt><a href="#">购物指南</a></dt>
+                            <dd>
+                                <a href="#">购物流程</a>
+                                <a href="#">会员介绍</a>
+                                <a href="#">生活旅行</a>
+                                <a href="#">常见问题</a>
+                                <a href="#">大家电</a>
+                                <a href="#">联系客服</a>
+                            </dd>
+                        </dl>
+                        <div class="col-lg-2 col-md-2 col-sm-2 ">
+                            <dl>
+                                <dt><a href="#">自营覆盖区县</a></dt>
+                                <dd>
+                                    <p>已向全国2661个区县提供自营配送服务支持货到付款、POS机刷卡和售后上门服务。</p>
+                                    <a href="#">查看详情 ></a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="mod_copyright">
+                        <div class="mod_copyright_links">
+                            <a href="#">关于我们</a>
+                            <a href="#">联系我们</a>
+                            <a href="#">联系客服</a>
+                            <a href="#">合作招商</a>
+                            <a href="#">商家帮助</a>
+                            <a href="#">营销中心</a>
+                            <a href="#">手机官网</a>
+                            <a href="#">友情链接</a>
+                            <a href="#">销售联盟</a>
+                            <a href="#">商城社区</a>
+                            <a href="#">风险监测</a>
+                            <a href="#">隐私政策</a>
+                            <a href="#">商城公益</a>
+                            <a href="#">English Site</a>
+                            <a class="no-borRight" href="#">Contact Us</a>
+                        </div>
+                        <div class="mod_copyright_info">
+                            <p>
+                                <a href="#">京公网安备 11000002000088号 |</a>
+                                <span> 京ICP证070359号 |</span>
+                                <a href="#"> 互联网药品信息服务资格证编号(京)-经营性-2014-0008 |</a>
+                                <span> 新出发京零 字第大120007号</span>
+                            </p>
+                            <p>
+                                <span>互联网出版许可证编号新出网证(京)字150号 |</span>
+                                <a href="#"> 出版物经营许可证 |</a>
+                                <a href="#"> 网络文化经营许可证京网文[2014]2148-348号 |</a>
+                                <span> 违法和不良信息举报电话：4006561155</span>
+                            </p>
+                            <p>
+                                <span>Copyright © 2004 - 2017   版权所有 |</span>
+                                <span> 消费者维权热线：4006067733经营证照</span>
+                            </p>
+                            <p>
+                                <a href="#">旗下网站：商城钱包 </a>
+                                <a href="#">| 云</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mod_copyright_icon">
+                        <a class="mod_copyright_icon_1" href="#"></a>
+                        <a class="mod_copyright_icon_2" href="#"></a>
+                        <a class="mod_copyright_icon_3" href="#"></a>
+                        <a class="mod_copyright_icon_4" href="#"></a>
+                        <a class="mod_copyright_icon_5" href="#"></a>
+                        <a class="mod_copyright_icon_6" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="fix">
+            <ul>
+                <li>家电手机</li>
+                <li>电脑数码</li>
+                <li>3 C运动</li>
+                <li>爱吃</li>
+            </ul>
+            <p>返回顶部</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/left-aside.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/goodTypeAndAds.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/content_scareBuying.js"></script>
+    <script type="text/javascript" src="js/find-good.js"></script>
+    <script type="text/javascript" src="lib/WOW/wow.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("content img").addClass('wow bounceIn');
+            new WOW().init();
+        })
+    </script>
+</body>
+</html>

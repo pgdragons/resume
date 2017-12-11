@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		canvas{
+			background-image: url("./images/bgc.png");
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<button id="btn">加速</button>
+	<script type="text/javascript" src="./lib/Rect.js"></script>
+	<script type="text/javascript" src="./lib/Snake.js"></script>
+	<script type="text/javascript" src="./lib/Food.js"></script>
+	<script type="text/javascript" src="./lib/Obstacle.js"></script>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var btn = document.getElementById("btn");
+		var fps = 10;// frame per second
+		btn.addEventListener("click",function(){
+			clearInterval(time);
+			fps += 10;
+			createTimer();
+		});
+		var wh = 20;
+		canvas.width = 1020;
+		canvas.height = 680;
+		var horizonNum = canvas.width/wh;
+		var verticalNum = canvas.height/wh;
+		var ctx = canvas.getContext("2d");
+		// 使用Snake.js创建出一个小蛇对象
+		var snake = new Snake();
+		snake.render(ctx);
+		// 开启一个计时器,在这个计时器中去实现小蛇的自动走
+		var food = createFood(ctx);
+		var obstacleArr = createObstacle();
+		var time ;
+		createTimer();
+		function createTimer(){
+			time = setInterval(function(){
+				canvas.width = canvas.width;
+				canvas.height = canvas.height;
+				// 此时在这个方法中调用了snake对象中的某一个移动方法,在那个移动方法中,去修改了this.arr中数据;修改完成之后,再来进行重新渲染
+				food.render(ctx);
+				renderObstacle(ctx);
+				snake.move(ctx,food);
+			},1000/fps);
+		}
+		// 再来添加一个键盘事件
+		document.onkeyup = function(e){
+			snake.changeDirction(e.keyCode);
+		}
+		function createFood(ctx){
+			// 使用Rect.js创建出一个食物
+			var food = new Food({
+				x:30*wh,
+				y:20*wh,
+				w:2*wh,
+				h:2*wh,
+				src:"./images/food.png",
+				color:"red",
+				marginColor:"green",
+				marginSize:3
+			});
+			return food;
+		}
+		function createObstacle(ctx){
+			var arr = [];
+			for(var i = 0;i<6;i++){
+				// 使用Rect.js创建出一个食物
+				var obstacle = new Obstacle({
+					x:5*(i+1)*wh,
+					y:5*(i+1)*wh,
+					w:1.5*(i+1)*wh,
+					h:1.5*(i+1)*wh,
+					src:"./images/ren.png"
+				});
+				arr.push(obstacle)
+			}
+			return arr;
+		}
+		function renderObstacle(ctx){
+			for(var i = 0;i<obstacleArr.length;i++){
+				var obstacle = obstacleArr[i];
+				obstacle.render(ctx);
+			}
+		}
+	</script>
+</body>
+</html>

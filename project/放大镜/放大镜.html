@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.box{
+		position: relative;
+		margin: 100px;
+	}
+	.small{
+		position: relative;
+		width: 300px;
+		height: 300px;
+		border: 1px solid #eee;
+		cursor: move;
+	}
+	.small img{
+		width: 300px;
+		height: 300px;
+	}
+	.mask{
+		position: absolute;
+		width: 187px;
+		height: 187px;
+		display: none;
+		background-color: rgba(165,271,84,.3);
+	}
+	.big{
+		position: absolute;
+		left: 300px;
+		top: 0;
+		overflow: hidden;
+		width: 500px;
+		height: 500px;
+		border: 1px solid #eee;
+	}
+	.big-img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="small" id="small">
+			<img src="images/img_small.jpg" alt="" />
+			<i class="mask" id="mask"></i>
+		</div>
+		<div class="big" id="big">
+			<img class="big-img" id="big_img"src="images/img_big.jpg" alt="" />
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var box = document.getElementById("box");
+	var mask = document.getElementById("mask");
+	var small = document.getElementById("small");
+	var big = document.getElementById("big");
+	var big_img = document.getElementById("big_img");
+
+	small.onmouseover = function()
+	{
+		mask.style.display = "block";
+		big.style.display = "block";
+	}
+	small.onmouseout = function()
+	{
+		mask.style.display = "none";
+		big.style.display = "none";
+	}
+	small.onmousemove = function(event)
+	{
+		var event = event || window.event;
+		//距离small盒子左上角的距离
+		var x = event.clientX - mask.offsetWidth/2 - box.offsetLeft;
+		var y = event.clientY - mask.offsetHeight/2 - box.offsetTop;
+		x = x < 0 ? 0 : x;
+		x = x > (small.offsetWidth - mask.offsetWidth) ? (small.offsetWidth - mask.offsetWidth) : x;
+		y = y < 0 ? 0 : y;
+		y = y > (small.offsetHeight - mask.offsetHeight) ? (small.offsetHeight - mask.offsetHeight) : y;
+		mask.style.left =  x + "px";
+		mask.style.top =   y + "px";
+		big_img.style.left =  -x * 2.67 + "px";
+		big_img.style.top =   -y * 2.67 + "px";
+	}
+
+</script>

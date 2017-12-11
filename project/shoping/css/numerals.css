@@ -1,0 +1,37 @@
+/*数码box*/
+#content-model .numerals{
+	width: 1165px;
+	height: 530px;
+	margin-top: 20px;
+	/*background-color: yellow;*/
+}
+#content-model .numerals .top{
+	width: 1165px;
+	height: 58px;
+	background-color: #337e8d;
+	line-height: 58px;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#content-model .numerals .top a{
+	border:1px solid #77b6c3;
+	margin-right: 5px;
+	margin-top: 18px !important;
+}
+#content-model .numerals .top a:hover{
+	border:1px solid #fff;
+	text-decoration: none !important;
+}
+#content-model .numerals-left{
+	width: 580px;
+	height: 480px;
+	background-color: #fff;
+	margin-right: 5px;
+}
+#content-model .numerals-right{
+	width: 580px;
+	height: 480px;
+	background-color: #fff;
+}

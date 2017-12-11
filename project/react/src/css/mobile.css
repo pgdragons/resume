@@ -1,0 +1,59 @@
+/*头部信息*/
+.mobile_header{
+	margin-top: 30px;
+	text-align: center;
+}
+.mobile_header p{
+	font-size: 20px;
+	color: #d81e06;
+}
+.mobile_header .mobile_header_logo img{
+	width: 100%;
+
+
+}
+.mobile_header .mobile_header_login img{
+	width: 100%;
+}
+
+/*主体的内容*/
+.mobile_news_list{
+	overflow: hidden;
+	padding: 10px;
+}
+.mobile_news_list .mobile_news_list_title {
+	width: 50%;
+	float: left;
+	padding: 10px;
+	/*border:10px solid red;*/
+}
+.mobile_news_list .mobile_news_list_title .mobile_news_list_title_text{
+	font-size: 20px;
+	font-weight: bold;
+}
+.mobile_news_list .mobile_news_list_title .mobile_news_list_title_auto{
+
+}
+.mobile_news_list .mobile_news_list_title .mobile_news_list_title_pinglun{
+
+}
+.mobile_news_list .mobile_news_list_img{
+	width: 50%;
+	float: right;
+	padding: 10px;
+}
+.mobile_news_list .mobile_news_list_img img{
+	width: 100%;
+	/*float: right;*/
+}
+
+
+/*底部的内容*/
+.mobile_footer{
+	width: 100%;
+	text-align: center;
+}
+.mobile_footer .mobile_footer_text{
+	/*margin-left: 20px;*/
+	font-size:15px;
+}

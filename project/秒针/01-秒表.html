@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#box{
+		width: 520px;
+		margin: 50px auto;
+		overflow: hidden;
+	}
+	#content{
+		width: 520px;
+		height: 246px;
+		padding-top: 30px;
+		padding-left: 30px;
+		background: url(images/bg2.jpg);
+
+	}
+	#content_num{
+		width: 516px;
+		height: 105px;
+		margin-bottom: 30px;
+		position: relative;
+		/*background-color: yellow;*/
+
+	}
+	ul{
+		list-style:none;
+	}
+
+	.num_img1{
+		background: url(images/number-bg.png) no-repeat;
+	}
+	.num_img2{
+		background: url(images/number-bg.png) no-repeat;
+	}
+	.num_img3{
+		background: url(images/number-bg.png) no-repeat;
+	}
+	.num_img4{
+		margin-left: 30px;
+		background: url(images/number-bg.png) no-repeat;
+	}
+	.num_img5{
+		background: url(images/number-bg.png) no-repeat;
+	}
+	.num_img6{
+		margin-left: 30px;
+		background: url(images/number-bg.png) no-repeat;
+	}
+	#content_num li{
+		float: left;
+		margin-right: 5px;
+		width: 67px;
+		height: 99px;
+	}
+	#content_num li span{
+		color: #fff;
+		font-size: 90px;
+	}
+	.dot-two{
+		position: absolute;
+		top: 20px;
+		left: 217px;
+	}
+	.dot-one{
+		position: absolute;
+		top: 63px;
+		right: 107px;
+	}
+	
+	#num1{
+		position: absolute;
+		top: 0;
+		left:10px;
+	}
+	#num2{
+		position: absolute;
+		top: 0;
+		left:80px;
+	}
+	#num3{
+		position: absolute;
+		top: 0;
+		left:155px;
+	}
+	#second2{
+		position: absolute;
+		top: 0;
+		left:255px;
+	}
+	#second1{
+		position: absolute;
+		top: 0;
+		left:330px;
+	}
+	#milisecond{
+		position: absolute;
+		top: 0;
+		left:430px;
+	}
+	#content_btn{
+		width: 515px;
+		height: 60px;
+		position: relative;
+		/*background-color: green;*/
+		/*margin-bottom: 20px;*/
+	}
+/*	#content_btn span{
+		float: left;
+		width: 136px;
+		height: 50px;
+	}*/
+	#btn_start{
+	width: 136px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(images/start-normal.png);
+	/*background:url(images/start-normal.png) no-repeat;*/
+	}
+	#btn_stop{
+	width: 136px;
+	height: 50px;
+	background-image: url(images/stop-normal.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	/*background:url(images/start-normal.png) no-repeat;*/
+	}
+	#btn_reset{
+	width: 136px;
+	height: 50px;
+	background-image: url(images/reset-normal.png);
+	position: absolute;
+	top: 0;
+	left:200px;
+	/*background:url(images/reset-normal.png) no-repeat;*/
+	}
+	#btn_count{
+	width: 136px;
+	height: 50px;
+	background-image: url(images/record-normal.png);
+	position: absolute;
+	top: 0;
+	left: 200px;
+	display: none;
+	/*background:url(images/reset-normal.png) no-repeat;*/
+	}
+	.btn-jc{
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	font-size: 30px;
+	}
+	#bottom{
+		list-style:none;
+		width: 550px;
+		height: 300px;
+		background-color: #3E4045;
+		font-size: 40px;
+		color: green;
+	}
+/*	.cb{
+		clear: both;
+	}*/
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var btn_start=$("#btn_start");
+		var btn_stop=$("#btn_stop");
+		var btn_reset=$("#btn_reset");
+		var btn_count=$("#btn_count");
+		var jc = $("#jc");
+		var num1=$("#num1");
+      var num2=$("#num2");
+      var num3=$("#num3");
+      var second2=$("#second2");
+      var second1=$("#second1");
+      var milisecond=$("#milisecond");
+      var timer;
+      var timerjc;
+      var i= 0;
+		//按下启动按钮
+		btn_start.onclick=function(){
+			btn_stop.style.display="block";
+			btn_start.style.display="none";
+			btn_reset.style.display="none";
+    		btn_count.style.display="block";
+    		jc.style.display="block";
+			 timer=setInterval(function(){
+			i++;
+			milisecond.innerHTML =i;
+			if(i==9){
+				milisecond.innerHTML="0";
+				second1.innerHTML=parseInt(second1.innerHTML)+1;
+					i=0;
+						if(second1.innerHTML>9){
+								second1.innerHTML="0";
+								second2.innerHTML=parseInt(second2.innerHTML)+1;
+
+								if(second2.innerHTML>5){
+									second2.innerHTML="0";
+									num3.innerHTML=parseInt(num3.innerHTML)+1;						
+									if(num3.innerHTML>9){
+										num3.innerHTML="0";
+										num2.innerHTML=parseInt(num2.innerHTML)+1;
+										if(num2.innerHTML>5){
+											num2.innerHTML="0";
+											num1.innerHTML=parseInt(num1.innerHTML)+1;
+										}
+									}
+								}							
+							}
+						}
+						timerjc =num3.innerHTML+num2.innerHTML+num1.innerHTML+":"+second2.innerHTML+second1.innerHTML+":"+milisecond.innerHTML;
+		
+			}, 100);
+		}
+		btn_stop.onclick=function(){
+			btn_start.style.display="block";
+			btn_stop.style.display="none";
+			stop.onclick=function(){
+					start.style.display="block";
+					reset.style.display="block";
+					stop.style.display="none";
+					jc.style.display="none";
+					clearInterval(timer);
+				}
+		}
+		btn_count.onclick = function(){
+					jc.innerHTML=timerjc;					
+					var lis= document.createElement("li");
+					lis.innerHTML=timerjc;								
+					bottom.appendChild(lis);	
+				}
+				btn_stop.onclick=function(){
+					btn_start.style.display="block";
+					btn_reset.style.display="block";
+					btn_stop.style.display="none";
+					btn_count.style.display="none";
+					clearInterval(timer);
+				}
+				btn_reset.onclick=function(){
+					milisecond.innerHTML="0";
+					second1.innerHTML="0";
+					second2.innerHTML="0";
+					num1.innerHTML="0";
+					num2.innerHTML="0";
+					num3.innerHTML="0";
+					jc.style.display="none";
+					jc.innerHTML="000:00.0";
+					bottom.innerHTML=null;		
+				}
+
+
+
+
+
+	function $(name)
+	{
+		var first = name.charAt(0);
+		// console.log(first);
+		if(first == "#")
+		{
+			name = name.substr(1);
+			return document.getElementById(name);
+		}else if(first == ".")
+		{
+			name = name.substr(1);
+			return getClass(name);
+		}else{
+			return document.getElementsByTagName(name);
+		}
+	}
+
+			function getClass(name)
+			{
+				if(document.getElementsByClassName)
+				{
+					return document.getElementsByClassName(name);
+				}
+				var arr = [];//存放满足条件的元素
+				var tags = document.getElementsByTagName("*");
+				for(var i = 0 ;i < tags.length ;i++)
+				{
+					var tagname = tags[i].className;
+					var tagArr = tagname.split(" ");
+					for(var k=0;k<tagArr.length;k++)
+					{
+						if(tagArr[k] == name)
+						{
+							arr.push(tags[i]);
+						}
+					}
+				}
+				return arr;
+			}
+
+
+
+
+
+
+	}
+
+	</script></head>
+<body>
+	<div id="box">
+		<div id="content">
+			<div id="content_num">
+				<ul>
+					<li class="num_img1">
+						<span id="num1">0</span>
+					</li>
+					<li class="num_img2">
+						<span id="num2">0</span>
+					</li>
+					<li class="num_img3">
+						<span id="num3">0</span>
+					</li>
+					<span class="dot-two">
+						<img src="images/dot-two.png" alt="" />
+					</span>
+					<li class="num_img4">
+						<span id="second2">0</span>
+					</li>
+					<li class="num_img5">
+						<span id="second1">0</span>
+					</li>
+					<span class="dot-one">
+						<img src="images/dot-one.png" alt="" />
+					</span>
+					<li class="num_img6">
+						<span id="milisecond">0</span>
+					</li>
+				</ul>
+			</div>
+			<div id="content_btn">
+				<input id="btn_start"type="button" />
+				<input id="btn_stop"type="button" />
+				<input id="btn_reset"type="button" />
+				<input id="btn_count"type="button" />
+				<span class="btn-jc" id="jc">000:00.0</span>
+			</div>
+		</div>
+		<div class="cb"></div>
+		<ul id="bottom">
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>

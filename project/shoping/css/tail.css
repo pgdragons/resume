@@ -1,0 +1,214 @@
+/*=====================================尾部================================*/
+#footer{
+    margin-top: 50px;
+}
+.w {
+    margin:auto;
+    width:1165px;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    color: red;
+}
+#footer .w{
+}
+/*================================多快好省==============================*/
+#footer .w .mod_service{
+	height: 103px;
+	position: relative;
+}
+#footer .w .mod_service ul{
+	width: 100%;
+	height: 103px;
+	float: left;
+	text-align: center;
+	line-height: 103px;
+}
+#footer .w .mod_service ul li{
+	float: left;
+    width: 180px;
+    position: relative;
+    padding-left: 45px;
+    margin-left:20px;
+    margin-top: 30px;
+}
+#footer .w .mod_service h5{
+	height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+
+}
+#footer .w .mod_service .duo{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+    background-image: url("../images/footer/ico_service.png");
+    background-position: 0  0;
+}
+#footer .w .mod_service .kuai{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+    background-image: url("../images/footer/ico_service.png");
+    background-position: 0 -44px;
+}
+#footer .w .mod_service .hao{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+    background-image: url("../images/footer/ico_service.png");
+    background-position: 0 -88px;
+}
+#footer .w .mod_service .sheng{
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 42px;
+    background-image: url("../images/footer/ico_service.png");
+    background-position: 0 -132px;
+}
+/*=================================购物指南===============================*/
+#footer .w .mod_help{
+	overflow: hidden;
+    height: 198px;
+    border-top: 1px solid #dedede;
+    padding-left: 30px;
+
+}
+#footer .w .mod_help dl{
+	width: 190px;
+	height: 159px;
+	float: left;
+    line-height: 22px;
+	font-family: Microsoft YaHei;
+	margin-top: 20px;
+}
+#footer .w .mod_help dl dt{
+	margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+#footer .w .mod_help dl dd{
+	color: #666;
+    font-size: 12px;
+}
+#footer .w .mod_help div{
+	margin-top: 20px;
+	float: right;
+    width: 200px;
+    height: 150px;
+    background: url("../images/footer/ico_footer.png") no-repeat 0 0;
+}
+#footer .w .mod_help div h5{
+	margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+
+}
+#footer .w .mod_help div p{
+	color: #666;
+    font-size: 12px;
+    width: 180px;
+    line-height: 20px;
+}
+#footer .w .mod_help div a{
+	display: block;
+	text-align: right;
+	color: #666;
+	font-size: 12px;
+	margin-right: 20px;
+}
+#footer .w .mod_help div a:hover{
+	color: red;
+}
+#footer .w .mod_copyright{
+	display: block;
+	height: 193px;
+	padding: 15px 0;
+    border-top: 1px solid #e1e1e1;
+    text-align: center;
+}
+#footer .w .mod_copyright .links{
+	color: #666;
+	font: 12px/1.5 Microsoft YaHei;
+}
+#footer .w .mod_copyright .links a{
+	margin-right: 10px;
+}
+#footer .w .mod_copyright div{
+	height: 108px;
+	padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+	font: 12px/1.5 Microsoft YaHei;
+}
+#footer .w .mod_copyright div p{
+	padding: 3px 0;
+}
+ #footer .w .mod_copyright div p.mod_copyright_auth .ico-1{
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../images/footer/ico_footer.png");
+    background-position: 0 -151px;
+ }
+ #footer .w .mod_copyright div p.mod_copyright_auth .ico-2{
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../images/footer/ico_footer.png");
+    background-position: -104px -151px;
+ }
+ #footer .w .mod_copyright div p.mod_copyright_auth .ico-3{
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../images/footer/ico_footer.png");
+    background-position: 0 -184px;
+ }
+ #footer .w .mod_copyright div p.mod_copyright_auth .ico-4{
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../images/footer/ico_footer.png");
+    background-position: -104px  -184px;
+ }
+ #footer .w .mod_copyright div p.mod_copyright_auth .ico-5{
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../images/footer/ico_footer.png");
+    background-position:0 -217px;
+ }
+ #footer .w .mod_copyright div p.mod_copyright_auth .ico-6{
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../images/footer/ico_footer.png");
+    background-position:-104px -217px;
+ }
+
+
+
+
+

@@ -1,0 +1,35 @@
+#content-model .food{
+	width: 1165px;
+	height: 530px;
+	margin-top: 20px;
+}
+#content-model .food .top{
+	width: 1165px;
+	height: 58px;
+	background-color: #eeb924;
+	line-height: 58px;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#content-model .top a{
+	border:1px solid #f9d661;
+	margin-right: 10px;
+	padding:5px 10px;
+}
+#content-model .food .top a:hover{
+	border:1px solid #fff;
+	text-decoration: none !important;
+}
+#content-model .food-left{
+	width: 580px;
+	height: 480px;
+	background-color: #fff;
+	margin-right: 5px;
+}
+#content-model .food-right{
+	width: 580px;
+	height: 480px;
+	background-color: #fff;
+	
+}

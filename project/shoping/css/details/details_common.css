@@ -1,0 +1,102 @@
+
+/*=====================================================================================*/
+/*heng手机之类的横标*/
+#heng{
+	height: 50px;
+	background-color:lightgray;
+	border-top: 2px solid red;
+}
+#heng .heng-t{
+	/*background-color:red;*/
+	height: 50px;
+	line-height: 50px;
+}
+#heng .heng-t .le-heng ul{
+	margin-left: 80px;
+}
+#heng .heng-t .le-heng ul li{
+	float: left;
+	margin-left: 10px;
+}
+#heng .heng-t .le-heng ul li input{
+	width: 150px;
+	height: 30px;
+	padding:3px 10px;
+}
+#heng .heng-t .ri-heng{
+	margin-right: 100px;
+}
+#heng .heng-t .ri-heng ul li{
+	float: left;
+	margin-left: 10px;
+}
+#heng .heng-t .ri-heng .heng-imgsize{
+	width: 14px;
+	height: 15px;
+}
+#product{
+	width: 1198px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #fff;
+}
+.hintss{
+	display: none;
+	width: 405px;
+	height: 158px;
+	position: absolute;
+	z-index: 23121313;
+	top: 10px;
+	right: 30px;
+	box-shadow: -6px 5px 5px #999;
+	position: fixed;
+}
+.hintss img{
+}
+.yiyang:hover{
+	border:1px solid red;
+	cursor: pointer;
+}
+.spans:hover{
+	border:1px solid red !important;
+	cursor: pointer;
+}
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

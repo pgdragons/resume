@@ -1,0 +1,175 @@
+.zitisize{
+	/*width: 100px;*/
+	height: 15px;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+.ofh{
+	overflow: hidden;
+}
+.mgl{
+	margin-left: 10px;
+}
+.footerss{
+	/*width: 1980px;*/
+	height: 100%;
+}
+.yiyang{
+	height: 34px;
+	text-align: center;
+	line-height:34px;
+	font-size: 15px;
+	color: #666;
+	border: 1px solid black;
+}
+.zuoyi{
+	height: 34px;
+	text-align: center;
+	line-height:34px;
+	color: #999;
+
+}
+#proright{
+	width: 800px;
+	height: 700px;
+	/*background-color: red;*/
+	/*float: right;*/
+	/*border: 2px solid green;*/
+}
+#proright .one .one-p{
+	font: 700 16px Arial,"microsoft yahei";
+    color: #666;
+    padding-top: 10px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+#proright .one .one-a{
+	color: #e4393c;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+#proright .two{
+	background-color: #f5f5f5;
+}
+#proright .two .two-jdj{
+	overflow: hidden;
+}
+#proright .two .two-cuxiao{
+	overflow: hidden;
+}
+#proright .two .two-cuxiao .cuxiao-man{
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	border:1px solid red;
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+}
+#proright .two .two-cuxiao .cuxiao-zi{
+	color: #2f4f4f;
+	font-size: 13px;
+}
+#proright .three{
+	/*background-color:red;*/
+	border-bottom: 1px dashed green;
+	height: 100px;
+}
+#proright .three .three-tao{
+	font-size: 12px;
+	color: blue;
+	border: 1px solid blue;
+	border-radius: 6px;
+}
+#proright .three .threetop{
+	margin-top: 10px;
+	height: 20px;
+	line-height: 20px;
+
+}
+#proright .four{
+	margin-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed blue;
+}
+#proright .four .fo-1{
+	height: 50px;
+	/*background-color: red;*/
+}
+#proright .four .fo-1 .fo-1color{
+	height: 50px;
+	line-height: 50px;
+}
+#proright .four .fo-1 .fo-1span{
+	height: 50px;
+}
+#proright .four .fo-1 .fo-1span div{
+	height: 48px;
+	width: 80px;
+	border: 1px solid #666;
+	text-align: center;
+	line-height: 48px;
+	color: #666;
+	margin-right: 15px;
+}
+#proright .four .fo-1 .fo-1span .spcr{
+	border: 1px solid red;
+}
+#proright .five{
+	padding-top: 15px;
+
+}
+#proright .five .five-top{
+}
+#proright .five .five-top .top-lt{
+	width: 100px;
+	height: 30px;
+	position: relative;
+	margin-top: 10px;
+	/*background-color: yellow;*/
+}
+#proright .five .five-top .top-lt .tl{
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid black;
+	margin-left:20px;
+
+}
+#proright .five .five-top .top-lt .tr{
+
+}
+#proright .five .five-top .top-lt .tr .jia{
+	width: 20px;
+	height: 30px;
+	/*background-color: yellow;*/
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid black;
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+}
+#proright .five .five-top .top-lt .tr .jian{
+	width: 20px;
+	height: 30px;
+	/*background-color: yellow;*/
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid black;
+	position: absolute;
+	left: 0;
+}
+#proright .five .five-top .top-ri{
+	width: 130px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	background-color:red;
+	font-weight: bolder;
+	color: #fff;cursor: pointer;
+}

@@ -1,0 +1,153 @@
+/*设置尾部==========================================================*/
+#footer{
+	margin-top: 20px;
+}
+#footer .row{
+	/*height: 500px;*/
+	/*background-color: red;*/
+}
+/*尾部顶层====*/
+#footer .row .mod-item{
+	/*background-color: green;*/
+	
+	/*padding:30px 0;*/
+	height: 43px;
+}
+#footer .row .mod-item div{
+	float: left;
+	height: 42px;
+	/*width: 225px;*/
+	/*background-color: blue;*/
+	/*margin-left: 40px;*/
+	white-space: nowrap;
+	overflow: hidden;
+}
+#footer .row .mod-item div i{
+	width: 36px;
+	height: 42px;
+	background-image: url("../images/footer/ico_service.png");
+	float: left;
+}
+#footer .row .mod-item div h5{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 42px;
+	padding-left: 50px ;
+}
+#footer .row .mod-item div .icon-duo{
+	background-position: 0 0;
+}
+#footer .row .mod-item div .icon-kuai{
+	background-position: 0 -43px;
+}
+#footer .row .mod-item div .icon-hao{
+	background-position: 0 -86px;
+}
+#footer .row .mod-item div .icon-sheng{
+	background-position: 0 -129px;
+}
+/*帮助*/
+#footer .mod-help{
+	height: 200px;
+	/*background-color: yellow;*/
+	padding-bottom: 10px;
+}
+#footer .mod-help a{
+	display: block;
+	margin-bottom: 5px;
+	/*width: 198px;*/
+	height: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+#footer .mod-help dl{
+	/*width: 198px;*/
+	height: 200px;
+	float: left;
+}
+#footer .mod-help dl dt{
+	font-weight: bold;
+	font-size: 15px;
+}
+#footer .mod-help dl  dd{
+	font-size: 12px;
+}
+/*京东自营覆盖区县*/
+#footer .mod-help div {
+	/*white-space: nowrap;*/
+	overflow: hidden;
+}
+#footer .mod-help div dt a{
+	text-align: center;
+}
+#footer .mod-help div dl  dd p{
+	color: #666;
+}
+#footer .mod-help div dd a{
+	text-align: right;
+}
+/*关于合作招商*/
+#footer .row .mod_copyright{
+	padding-top: 10px;
+	border-top: 2px solid #dedede;
+	text-align: center;
+}
+
+.mod_copyright_links  a{
+	display: inline-block !important;
+	padding: 0 8px;
+	font-size: 12px;
+	line-height: 20px;
+	height: 20px;
+	/*width: 50px;*/
+	border-right: 1px solid #666;
+}
+.no-borRight{
+	border-right: 0 !important;
+}
+/*京公网安备*/
+#footer .row .mod_copyright p a:hover{
+	color: #666 !important;
+	text-decoration: none;
+}
+#footer .row .mod_copyright_info{
+	font-size: 12px;
+}
+#footer .row .mod_copyright_info a{
+	color: #999;
+	display: inline-block !important;
+}
+#footer .row .mod_copyright_info p{
+	margin-top: 10px;
+	color: #999;
+}
+/*尾部精灵图*/
+#footer .mod_copyright_icon{
+	text-align: center;
+	margin-top: 10px;
+}
+#footer .mod_copyright_icon a{
+	display: inline-block !important;
+	width: 103px;
+	height: 33px;
+	background-image: url("../images/footer/ico_footer.png");
+}
+#footer .mod_copyright_icon_1{
+	background-position: 0 -151px;
+}
+#footer .mod_copyright_icon_2{
+	background-position: -104px -151px;
+}
+#footer .mod_copyright_icon_3{
+	background-position: 0 -184px;
+}
+#footer .mod_copyright_icon_4{
+	background-position: -104px -184px;
+}
+#footer .mod_copyright_icon_5{
+	background-position:0 -217px;	
+}
+#footer .mod_copyright_icon_6{
+	background-position:-104px -217px;	
+}

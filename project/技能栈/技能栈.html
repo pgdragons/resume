@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="konva.js"></script>
+	<script src="dashCircle.js"></script>
+	<script src="SkillCircle.js"></script>
+</head>
+<body style="background:#4B5B8B">
+	<div id="box"></div>
+	<script>
+		var stage=new Konva.Stage({
+			width:700,
+			height:500,
+			container:"box"
+		});
+		var layer=new Konva.Layer();
+		stage.add(layer);
+		var outerRadius=200;
+		var innerRadius=120;
+		//创建虚线圆
+		var dashCircle=new DashCircle({
+			x : stage.width()/2,
+			y : stage.height()/2,
+			outerRadius :outerRadius,
+			innerRadius :innerRadius,
+			strokeWidth:2,
+		});
+		dashCircle.render(layer);
+		//准备数据
+		var data1=[
+			{angle:30,radius:innerRadius,stroke:"gray",fill:rColor(),text:"vue",strokeWidth:1},
+			{angle:120,radius:innerRadius,stroke:"gray",fill:rColor(),text:"react",strokeWidth:1},
+			{angle:210,radius:innerRadius,stroke:"gray",fill:rColor(),text:"rn",strokeWidth:1},
+			{angle:300,radius:innerRadius,stroke:"gray",fill:rColor(),text:"js",strokeWidth:1},
+		];
+		var data2=[
+			{angle:0,radius:outerRadius,stroke:"gray",fill:rColor(),text:"html5",strokeWidth:1},
+			{angle:45,radius:outerRadius,stroke:"gray",fill:rColor(),text:"angular",strokeWidth:1},
+			{angle:90,radius:outerRadius,stroke:"gray",fill:rColor(),text:"MySQL",strokeWidth:1},
+			{angle:135,radius:outerRadius,stroke:"gray",fill:rColor(),text:"Bootstrap",strokeWidth:1},
+			{angle:180,radius:outerRadius,stroke:"gray",fill:rColor(),text:"jQuery",strokeWidth:1},
+			{angle:225,radius:outerRadius,stroke:"gray",fill:rColor(),text:"微信小程序",strokeWidth:1},
+			{angle:270,radius:outerRadius,stroke:"gray",fill:rColor(),text:"Ajax",strokeWidth:1},
+			{angle:315,radius:outerRadius,stroke:"gray",fill:rColor(),text:"node",strokeWidth:1},
+		];
+		var skill1 = new SkillCircle({
+			data:data1
+		});
+		skill1.render(layer);
+
+		var skill2 = new SkillCircle({
+			data:data2
+		})
+		skill2.render(layer);
+		layer.draw();
+		skill1.rotate(layer);
+		skill2.rotate(layer);
+		function rColor(){
+			return "rgb("+parseInt(Math.random()*255)+","+parseInt(Math.random()*255)+","+parseInt(Math.random()*255)+")";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+#search{
+    width: 100%;
+    height: 172px;
+}
+#search .container .search-top{
+    height: 130px;
+    position: relative;
+}
+/*logo*/
+#search .container .search-top .logo{
+    text-align: center;
+    color: #fff;
+    padding:0 15px;
+    /*height: 130px;*/
+    overflow: hidden;
+    border-radius: 10%;
+    /*width: 160px;*/
+    /*position: absolute;
+    left: 0;*/
+}
+#search .container .search-top .logo h3{
+    height: 130px;
+    line-height: 130px;
+    white-space: nowrap;
+}
+@media (max-width: 900px){
+    #search .container .search-top .logo{
+        padding:0 ;
+    }
+    #search .container .search-top .logo h3{
+        font-size: 25rem;
+        font-weight: 600;
+    }
+}
+/*搜索框-中间==========================*/
+#search .container .search-top .search-top-center{
+    /*width: 660px;*/
+    /*margin-right: 20px;*/
+    height: 130px;
+    /*position: absolute;*/
+    /*left: 250px;*/
+}
+#search .container .search-top .search-top-center .input-search{
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+}
+#search .container .search-top .search-top-center .input-search input{
+    /*width: 560px;*/
+    height: 45px;
+    margin-left:50px;
+    padding:10px 0 10px 20px;
+    border:3px solid #ED145B;
+}
+@media (max-width:1000px){
+    #search .container .search-top .search-top-center .input-search input{
+        margin-left:5px;
+    }
+}
+/*搜索按钮*/
+#search .container .search-top .search-top-center .btn{
+    height: 45px;
+    border-radius:0;
+    /*width: 80px;*/
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+@media (max-width: 660px) {
+    #search .container .search-top .search-top-center .btn{
+        font-size: 11px;
+    }
+}
+#search .container .search-top .search-top-center .btn:hover{
+    color:#fff !important;
+}
+/*推荐搜索商品*/
+#search .container .search-top .search-top-center .recommend-good{
+    margin-top: 10px;
+    margin-left:50px;
+    width: 100%;
+    height: 55px;
+    line-height:45px;
+    overflow: hidden;
+}
+@media (max-width:1000px){
+    #search .container .search-top .search-top-center .recommend-good {
+        margin-left:5px;
+        font-size: 10px;
+    }
+}
+#search .container .search-top .search-top-center .recommend-good ul{
+    width: 100%;
+    overflow: hidden;
+}
+#search .container .search-top .search-top-center .recommend-good li{
+    float: left;
+    padding-right: 7px;
+    margin-right: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#search .container .search-top .search-top-center .recommend-good li a{
+    color:#999;
+}
+/*搜索框右侧==========================================*/
+#search .container .search-top .search-top-right{
+    /*width: 200px;*/
+    height: 130px;
+    padding: 0 !important;
+    /*position: absolute;
+    left: 940px;
+    top: 0;*/
+}
+#search .container .search-top .search-top-right img{
+    width: 100%;
+    height: 80px;
+    display: block;
+    margin-top: 30px;
+}
+/*搜索层底部标题导航*/
+#search .container .title-nav{
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+    padding: 0 !important;
+    position: relative;
+    overflow: hidden;
+}
+#search .container .title-nav h4{
+    /*width: 20%;*/
+    height: 40px;
+    line-height: 40px;
+    color:#fff;
+    background-color: #ED145B;
+}
+.title-nav ul{
+    /*width: 70%;*/
+    margin-left: 65px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.title-nav ul li{
+    float: left;
+    margin-right: 18px;
+    line-height: 40px;
+}
+.title-nav ul li a{
+    font-size: 19px;
+    color:#000;
+    text-shadow:1px 1px  2px #666;
+}
+.title-nav ul li a:hover{
+    text-decoration: none;
+}
+@media (max-width:1000px){
+    #search .container .title-nav  ul{
+        margin-left:0;
+    }
+    #search .container .title-nav  ul li{
+        margin-right: 0;
+        margin-left: 8px;
+    }
+    #search .container .title-nav  ul li a{
+        font-size: 18px;
+    }
+}
+@media (max-width:768px){
+    #search .container .title-nav  ul li{
+        margin-left: 5px;
+    }
+    #search .container .title-nav  ul li a{
+        font-size: 18px;
+    }
+    #search .container .title-nav  ul{
+        position: absolute;
+        left: 35%;
+    }
+}
+@media (max-width:630px){
+    #search .container .title-nav{
+        height: 80px;
+    }
+    #search .container .title-nav h4{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        z-index:2;
+    }
+    #search .container .title-nav  ul {
+        height:40px;
+        position: absolute;
+        left:0;
+        top: 0;
+    }
+    #search .container .title-nav  ul li a{
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style type="text/css">
+	#wrap{
+		margin :50px auto; 
+		width: 300px;
+		height: 380px;
+		padding: 20px 58px;
+		border:1px solid black;
+		position: relative;
+		display: none;
+		background-color: white;
+	}
+	input{
+
+		margin: 10px 20px;
+	}
+	#wrap input{
+		width: 270px;
+		height: 40px;	
+	}
+	#wrap p:nth-child(1){
+		width: 300px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: center;
+		line-height: 40px;
+	}
+	#wrap p:nth-child(2){
+		width: 300px;
+		height: 40px;
+		font-weight: bold;
+		font-size: 17px;
+		text-align: center;
+		line-height: 40px;
+	}
+	#wrap p:nth-child(3){
+		width: 300px;
+		height: 40px;
+		font-size: 10px;
+		text-align: center;
+		line-height: 40px;
+		position: absolute;
+		bottom:-12px;
+		right:-30px;
+	}
+	#box{
+		width: 40px;
+		height: 40px;
+		position:relative;
+		top:25px;
+		left:20px;
+		
+	}
+	img{
+		/*width: 40px;
+		height: 40px;*/
+		/*position: absolute;
+		top:10px;
+		left:25px;*/
+		/*display: none; */
+	}
+	#btn1{
+		width: 80px;
+		height: 40px;
+		background-color: #F5F5F5;
+		color:#63ABE3;
+		font-weight: bold;
+		font-size: 24px;
+		border:1px solid white; 
+		position: absolute;
+		top:0;
+	}
+	#btn1:hover{
+		border:1px solid blue; 
+	}
+	#btn2{
+		width: 270px;
+		height: 40px;
+		font-size: 24px;
+		font-weight: bold;
+		background-color: #86CE2F;
+		color: white;
+		margin-top: 10px;
+		margin-left:20px; 
+		border:none;
+	}
+
+	span{
+		display: block;
+		color: red;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+	#ts1{
+		position: absolute;
+		top:131px;
+		left:78px;
+		/*display: none;*/
+	}
+	#ts2{
+		position: absolute;
+		top:-4px;
+		left:18px;
+		display: none;:
+	}
+	#close{
+		display: block;
+		width: 49px;
+		height: 35px;
+		text-align: center;
+		line-height: 35px;
+		font-size: 30px;
+		color: black;
+		border-left: 1px solid #ddd;
+		position: absolute;
+		top:0;
+		right: 0;
+	}
+	#close:hover{
+		background-color: rgba(255,0,0,0.8);
+	}
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var btn1=document.getElementById("btn1");
+		var ts1=document.getElementById("ts1");
+		var close=document.getElementById("close");
+		var box=document.getElementById("box");
+		var img=document.querySelector("img")
+		var wrap=document.querySelector("#wrap");
+		var username1=document.getElementById("username1");
+		var password1=document.getElementById("password1");
+		var btn2=document.getElementById("btn2");
+		btn1.addEventListener("click", function(){
+			// console.log("dsa");
+			wrap.style.display="block";
+			document.querySelector("body").style.backgroundColor="#B2B2B2";
+			// document.querySelector("body").style.opacity="0.7";
+			})
+		close.addEventListener("click", function(){
+			wrap.style.display="none";
+			document.querySelector("body").style.backgroundColor="white";
+			ts1.innerHTML="";
+			username1.value="";
+			password1.value="";
+			})
+		btn2.addEventListener("click", function(){
+				var xhr=new XMLHttpRequest();
+				var strusername=username1.value;
+				var strpassword=password1.value;
+				ts1.innerHTML="";
+				if(strusername==""){
+					ts1.innerHTML="你还没有输入账号";
+					ts1.style.color="red";
+					return;
+				}
+				if(strpassword==""){
+					ts1.innerHTML="你还没有输入密码";
+					ts1.style.color="red";
+					return;
+				}
+
+				var url="01.php?username="+strusername+"&"+"password="+strpassword;
+				xhr.open("get",url,true);
+				xhr.send();
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4 && xhr.status==200){
+						if(xhr.responseText=="登入失败"){
+							console.log(xhr.responseText);
+							ts1.innerHTML="账号或者密码输入错误";
+							ts1.style.color="red";
+						}else{
+						 var img=document.createElement("img");
+						 img.src=xhr.responseText;
+						 box.appendChild(img);
+						 btn1.style.display="none";
+						 wrap.style.display = "none";
+						 document.querySelector("body").style.backgroundColor="white";
+						 strusername="";
+						 strpassword="";
+					}
+				}
+				}
+			})
+		}
+		</script>
+	</head>
+<body>
+	<div id="box"></div>
+	<input type="submit"value="登入" id="btn1">
+	<div id="wrap">
+
+		<p>帐号密码登录</p>
+		<p>推荐使用快速安全登录，防止盗号。</p>
+		<p>忘了密码？ | 注册新帐号 | 意见反馈</p>
+
+		<span id="ts1"></span>
+		<input type="text" placeholder="支持QQ号/邮箱/手机号登入"id="username1">
+		<input type="text" placeholder="密码" id="password1">
+		<button id="btn2">登入</button>
+		<span id="close">X</span>
+	</div> 	
+</body>
+</html>

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'cart';
+  src:  url('fonts/cart.eot?4ejamd');
+  src:  url('fonts/cart.eot?4ejamd#iefix') format('embedded-opentype'),
+    url('fonts/cart.ttf?4ejamd') format('truetype'),
+    url('fonts/cart.woff?4ejamd') format('woff'),
+    url('fonts/cart.svg?4ejamd#cart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cart' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*.icon-cart:before {*/
+  /*content: "\1f311";*/
+/*}*/

@@ -1,0 +1,103 @@
+#ads{
+    position: relative;
+}
+/*菜单右侧弹出层===============================*/
+.menu-content{
+    width: 988px;
+    /*height: 495px;*/
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px #999;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+.menu-content .cate{
+    width: 800px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.menu-content .cate a{
+    display: inline-block !important;
+    /*width: 73px;*/
+    height: 24px;
+    margin-right: 10px;
+    background-color: #6e6568;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+}
+.menu-content .center-ads{
+    width: 800px;
+    height: 450px;
+}
+.menu-content .center-ads a{
+    color: #6e6568;
+    font-size: 13px;
+}
+.menu-content .center-ads a:hover{
+    color:#c81623;
+}
+.menu-content .center-ads dl{
+    width: 700px;
+    /*height: 36px;*/
+    padding-left:80px;
+    position: relative;
+}
+.menu-content .center-ads dt{
+    width: 70px;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    float: left;
+    line-height: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu-content .center-ads dt a{
+    display: block;
+    text-align: right;
+}
+.menu-content .center-ads dd{
+    width: 700px;
+    /*height: 36px;*/
+    /*background-color: yellow;*/
+    line-height: 36px;
+    padding:6px 0;
+    border-bottom:1px solid #e0e0e0;
+    overflow: hidden;
+}
+.menu-content .center-ads dd a{
+    float: left;
+    margin-top: 10px;
+    height: 16px;
+    padding: 0 10px;
+    line-height: 16px;
+    border-left: 1px solid #e0e0e0;
+}
+/*右侧小图*/
+.menu-content .right-smallImg{
+    width: 168px;
+    height: 424px;
+    position: relative;
+    padding: 0 10px;
+}
+.menu-content .right-smallImg .menu-logo{
+    width: 168px;
+    height: 144px;
+}
+.menu-content .right-smallImg .menu-logo a{
+    margin:0 0 1px 1px;
+    float: left;
+}
+.menu-content .right-smallImg .menu-smallImg{
+    width: 168px;
+    height: 269px;
+}
+.menu-content .right-smallImg .menu-smallImg img{
+    margin-top: 10px;
+}

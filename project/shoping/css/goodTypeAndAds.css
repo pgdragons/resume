@@ -1,0 +1,152 @@
+
+@media (max-width:630px){
+	#goodTypeAndAds{
+		margin-top: 40px;
+	}
+}
+/*左侧商品分类*/
+article .goodType{
+	/*width: 20%;*/
+	height: 470px;
+	padding:10px 0 5px 5px;
+	background-color:#a94442 ;
+	color: #fff;
+}
+article .goodType li{
+	width: 100%;
+	height: 30px;
+	padding:5px 0 10px 10px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+article .goodType li a{
+	display: inline-block !important;
+	color: #fff;
+}
+article .goodType li a:hover{
+	text-decoration: none;
+}
+article .goodType li:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+@media (max-width: 400px) {
+	article .goodType li{
+		padding:5px 0;
+		white-space: normal;
+	}
+}
+
+
+/*ads广告轮播========================================*/
+article #ads {
+	/*width: 750px;*/
+	height: 470px;
+	padding:0 5px 5px 5px;
+	position: relative;
+	overflow: hidden;
+	/*margin-left: 50px;*/
+}
+/*article #ads .scroll-ads{
+	height: 360px ;
+}
+article #ads .scroll-ads ul{
+	width: 4500px;
+}
+article #ads .scroll-ads li{
+	width: 750px;
+	float: left;
+	padding:0 !important;
+}
+article #ads .scroll-ads li a{
+	display: inline-block;
+	height: 360px ;
+}
+article #ads .scroll-ads li img{
+	width: 750px;
+	height: 100%;
+}*/
+
+/*bootstarp================*/
+
+article #ads #carousel-example-generic{
+	height: 360px ;
+}
+article #ads #carousel-example-generic .carousel-inner{
+	/*width: 4500px;*/
+}
+article #ads #carousel-example-generic .item{
+	/*width: 750px;*/
+	/*float: left;*/
+	/*padding:0 !important;*/
+}
+article #ads #carousel-example-generic img{
+	width: 100%;
+	/*width: auto;*/
+	height:360px;
+}
+article #ads #carousel-example-generic a.left,a.right{
+	/*display: none;*/
+}
+/*adsBottom*/
+article #ads .ads-bottom{
+	width: 100%;
+	height: 100px;
+	margin-top: 10px !important;
+}
+article #ads .ads-bottom ul{
+	width: 100%;
+	background-color: red;
+}
+article #ads .ads-bottom li{
+	height: 100px;
+	padding:0 !important;
+}
+article #ads .ads-bottom li a{
+	height: 100px;
+}
+article #ads .ads-bottom li:nth-child(2){
+	padding:0 5px !important;
+}
+article #ads .ads-bottom li img{
+	width: 100%;
+	height: 100%;
+}
+/*右侧登录及商标===========*/
+.ads-right{
+	height:470px ;
+	/*margin-left: 30px;*/
+	padding: 0;
+	background-color: #fff;
+	position: relative;
+	z-index:0;
+}
+/*服务*/
+.services{
+	width: 100%;
+	height: 207px;
+}
+.services li{
+	width: 25%;
+	height: 54px;
+	float: left;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+	padding-top: 13px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+.services li a:nth-child(1){
+	width: 24px;
+	height: 25px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top:10px;
+	left: 11px;
+}
+.services li a:nth-child(2){
+	text-align: center;
+	font-size: 10px;
+	color: #000;
+	padding-top: 20px;
+}

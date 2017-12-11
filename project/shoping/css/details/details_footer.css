@@ -1,0 +1,203 @@
+/*人气*/
+#renqi{
+	overflow: hidden;
+	/*background-color:yellow;*/
+	width: 1198px;
+	height: 100%;
+}
+#footerss{
+}
+#renqi .rqnav{
+	height: 40px;
+	background-color: lightgray;
+}
+#renqi .rqnav .rqpj{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	background-color:lightgreen;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+#renqi .rqnav .rq-tm{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	/*background-color:lightgreen;*/
+	/*color: white;*/
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+#renqi .rqnav .rq-tm:hover{
+	color: red;
+}
+/*手机图片*/
+#renqi .sjicon{
+	margin-top: 20px;
+	height: 200px;
+	/*border: 2px solid red;*/
+}
+#renqi .sjicon .sjiconzuo {
+	/*background-color:yellow;*/
+}
+#renqi .sjicon .sjiconzuo .sz-s{
+	/*background-color: yellow;*/
+	width: 120px;
+	height: 100px;
+}
+#renqi .sjicon .sjiconzuo .sz-s .sz-span{
+	display: inline-block;
+	/*background-color:red;*/
+	height: 100px;
+	width: 18px;
+	font-size: 30px;
+	font-weight: 70;
+	color: #666;
+	text-align: center;
+	line-height: 100px;
+}
+#renqi .sjicon .sjiconyou{
+	/*background-color: #ff9999;*/
+	margin-left: 20px;
+	padding-top: 20px;
+}
+#renqi .sjicon .sjiconyou .sjy-2 .sjy-21{
+	font-size: 13px;
+}
+#renqi .sjicon .sjiconyou .sjy-2 .sjy-22{
+	color: red;
+	font-size: 20px;
+}
+#renqi .sjicon .sjiconyou .sjy-3{
+	width: 90px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background-color:#ff9999;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #666;
+}
+#renqi .sjicon .sjiconyou .sjy-4{
+	margin-top: 10px;
+	width: 130px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background-color:green;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #999;
+}
+/*下方*/
+#xiaf{
+	width: 1980px;
+	height: 100%;
+}
+
+/*下方左侧*/
+#xf-zuo{
+	width: 200px;
+	/*background-color:green;*/
+	/*height: 10000px;*/
+}
+#qijd{
+	height: 100px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+#qijd-1{
+	height: 40px;
+	background-color:#ccc;
+	text-align: center;
+	line-height: 40px;
+}
+#qijd-2,#qijd-3{
+	margin-top: 10px;
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 3px;
+}
+#gysj{
+	height: 300px;
+	border: 1px solid #666;
+	margin-bottom: 20px;
+}
+#daren{
+	border: 1px solid #666;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+#sjrxb{
+	border: 1px solid #666;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+#sjrxb .ttz1{
+	display: inline-block;
+	height: 30px;
+	width: 65px;
+	background-color:red;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+/*下方右侧*/
+#xf-you{
+	width: 980px;
+	height: 100%;
+	/*background-color: yellow;*/
+	/*height: 10000px;*/
+	margin-left: 20px;
+}
+#xyt{
+	height: 35px;
+	background-color: #ccc;
+}
+#xyt .cp1{
+	display: inline-block;
+	width: 90px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	background-color:red;
+}
+#xyt .cp2{
+	display: inline-block;
+	width: 90px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	background-color:red;
+	margin-left: 380px;
+	cursor: pointer;
+}
+#par{
+	/*background-color:red;*/
+	padding-bottom: 20px;
+}
+#par .par1{
+	width: 300px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+#xiangqin p{
+	width: 245px;
+	font-size: 12px;
+	float: left;
+	margin-top: 20px;
+}
+#datu{
+	text-align: center;
+}

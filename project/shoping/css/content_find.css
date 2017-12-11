@@ -1,0 +1,221 @@
+.find{
+    /*width: 1190px;*/
+    margin-top: 10px ;
+}
+.find #find-life-left,#find-life-center,find-life-right{
+    height: 455px;
+    /*border-right:1px solid #eee;*/
+}
+.find .find-life-header{
+    width: 388px;
+    height: 55px;
+    padding-left: 20px;
+}
+.find .find-life-header h3{
+    float: left;
+    line-height: 55px;
+    color: #fff;
+}
+.find .find-life-header a{
+    line-height: 45px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.find .find-life-header a p{
+    float: left;
+    color: #fff;
+}
+.find .find-life-header a i{
+    float: left;
+    margin-left: 10px;
+}
+/*、、、、、、、、、、、、、*/
+/*发现好货*/
+#find-life-left .find-life-header{
+    background-color: #4998a1;
+}
+#find-life-left .icon-ri{
+    width: 16px;
+    height: 17px;
+    float: left;
+    background-image: url("../images/sprite_index@1x.png");
+    background-position: -154px -40px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+/*内容*/
+#find-life-left .find-life-concent{
+    width: 388px;
+    height: 380px;
+    background-color: #fff;
+    padding:10px;
+}
+#find-life-left  .find-life-concent li{
+    float: left;
+}
+#find-life-left  .find-life-concent a{
+    position: relative;
+    width: 182px;
+    height: 120px;
+    /*transform-style: preserve-3d;*/
+    /*perspective:50px;*/
+}
+#find-life-left  .find-life-concent a p{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #4998a1;
+    font-size: 14px;
+}
+#find-life-left  .find-life-concent a img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/*优品专辑================================*/
+#find-life-center{
+    margin:0 2px;
+}
+/*头部*/
+#find-life-center .find-life-header{
+    background-color: #76488e;
+}
+#find-life-center .icon-ri{
+     width: 16px;
+     height: 17px;
+     float: left;
+     background-image: url("../images/sprite_index@1x.png");
+     background-position: -154px -40px;
+     background-repeat: no-repeat;
+     margin-top: 15px;
+ }
+/*内容*/
+#find-life-center .find-life-concent {
+    width: 388px;
+    height: 380px;
+    background-color: #fff;
+    padding:10px;
+    position: relative;
+    overflow: hidden;
+}
+#find-life-center .find-life-concent ul{
+    width: 1170px;
+    height:380px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#find-life-center .find-life-concent ul li{
+    width: 388px;
+    float: left;
+    padding: 10px;
+}
+#find-life-center .find-life-concent ul li header{
+    height: 30px;
+    line-height:30px;
+}
+#find-life-center .find-life-concent ul li div{
+    width:100%;
+    height: 159px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-display: row;
+    align-items:center;
+}
+#find-life-center .find-life-concent ul li div img{
+    flex:1;
+}
+/*排行榜============*/
+#find-life-right .find-life-header{
+    background-color: #5cb85c;
+}
+#find-life-right .icon-ri{
+    width: 16px;
+    height: 17px;
+    float: left;
+    background-image: url("../images/sprite_index@1x.png");
+    background-position: -154px -40px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+}
+#find-life-right .find-life-concent {
+    width: 388px;
+    height: 380px;
+    background-color: #fff;pdding:0 !important;
+    position: relative;
+}
+#find-life-right .find-life-concent header{
+    height: 40px;
+    display: flex;
+    flex-display: row;
+    width: 100%;
+    pdding:0 !important;
+    margin: 0 !important;
+}
+#find-life-right .find-life-concent header a{
+    flex:1;
+    height: 40px;
+    line-height:40px;
+    border-right:1px solid gray;
+    border-bottom:1px solid gray;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#find-life-right .find-life-concent header a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+/*内容*/
+#find-life-right .find-life-concent{
+    overflow: hidden;
+    position: relative;
+}
+#find-life-right .find-life-concent ul{
+    width: 1552px;
+    position: absolute;
+    left:0;
+}
+#find-life-right .find-life-concent ul li{
+    float: left;
+    width: 388px;
+    padding:10px;
+}
+#find-life-right .find-life-concent div{
+    width:390px;
+}
+#find-life-right .find-life-concent div dl dd{
+    width: 120px;
+    height: 147px;
+    padding: 10px 0;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#find-life-right .find-life-concent div dl dd img{
+    width: 110px;
+    height: 100px;
+}
+#find-life-right .find-life-concent div dl dd a{
+    font-size: 8px;
+    color: #666;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+#find-life-right .find-life-concent div dl dd a:hover{
+    text-decoration: none;
+}
+#find-life-right .find-life-concent span{
+    height: 5px;
+    position: absolute;
+    left:0;
+    top:37px;
+    background-color: red;
+}

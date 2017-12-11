@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的简历</title>
+   <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="resume.css">
+</head>
+
+<body>
+    <div class="main">
+      <div class="navbar navbar-default navbar-fixed-bottom">
+                <div class="navbar-header" >
+
+                    <!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                     </button>
+                    <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                    <span href="" class="navbar-brand"><a href="#floor1">我的详情</a></span>
+                </div>
+                <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse col-md-offset-4">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#floor2">关于我</a></li>
+                        <li><a href="#floor3">个人技能</a></li>
+                        <li><a href="#floor4">我的作品</a></li>
+                        <li><a href="#floor5">技能水平</a></li>
+                        <li><a href="#floor6">工作经历</a></li>
+                    </ul>
+                </div>
+            </div>
+        <section class="floor" id="floor1">
+          <div class="myIntro">
+                <h1>Hello,I'm Kang</h1>
+                <h2><strong>the shortest answer is doing.</strong></h2>
+                <div>
+                    <img src="./images/photo.jpg" alt="">
+                </div>
+                    <div class="myIntro_te">
+                        <p >我叫康龙波</p>
+                        <p>我是一名前端工程师</p>
+                    </div>
+               <!--  <button class="btn btn-info"><a href="#floor1">About me</a></button>
+                <button class="btn btn-primary"><a href="#floor4">My projects</a></button> -->
+                     </div>
+            <div class="floor1_bg">
+                <img src="images/b7.jpg" class="current" alt="">
+              
+            </div>
+        </section>
+
+         <section class="floor" id="floor2">
+           <img src="./images/2.png" alt="" class="floor2_bgi">
+            <h3>关于我</h3>
+            <!-- <hr> -->
+            <div class="floor2_pho col-md-12 col-xs-12">
+                <p class="text-center">
+                    <img id="pho1" src="./images/photo.jpg" alt="">
+                </p>
+            </div>
+            <div class="floor2_footer text-center col-md-12">
+                <!-- <p>QQ：</p> -->
+                <div class="floor2_Intro">
+                <p>E-Mail：pg_dragon@163.com</p>
+                <p>我叫康龙波,是一名前端工程师。2016年毕业于福建农林大学金山学院,对前端开发怀有热情和强烈的好奇心，不给自己设边界，更喜欢细致地感受它。 我对这个行业拥有高度热情，JS是最能直接看到效果的编程语言，给我带来极大的兴趣来学习工作近一年，写过响应式页面，移动端页面，pc端页面.微信小程序。用过Jquery、Ajax、React、React native、git、npm、Bootstrap、swiper、Node等。</p>
+                
+                </div>
+                <p>
+                    <img src="icons/qq-oc.png" alt="">
+                    <a href="http://www.qq.com">qq</a>
+                    <img src="icons/github.png" alt="">
+                    <a href="https://github.com/pgdragons">github</a>
+                     <img src="icons/mobile.png" alt="">
+                     <span>15705906087</span>
+                </p>
+            </div>
+        </section>
+
+           <section class="floor" id="floor3">
+            <h3>技能清单</h3>
+            <p class="intro text-center">前端的学习需要持之以恒，知识深度与广度都很重要。</p>
+            <p class="intro text-center"> 而前端开发的重中之重就是原生javascript的理解，而如今的思路必需有模块化，组件化，工程化。</p>
+            <div class="container">
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/pc.png" alt=""></p>
+                    <p>熟悉W3C标准，熟练运用html</p>
+                    <p>保证页面兼容性。</p>
+                </div>
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/code.png" alt=""></p>
+                    <p>有良好的代码风格</p>
+                    <p>可读性、维护性、扩展性、复用性</p>
+                </div>
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/ajax.png" alt=""></p>
+                    <p>完成常见的功能特效</p>
+                    <p>AJAX读取后台数据。</p>
+                </div>
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/bootstrap.png" alt=""></p>
+                    <p>bootstrap</p>
+                    <p>使用网格系统和模块，完成页面设计</p>
+
+                </div>
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/react.png" alt=""></p>
+                    <p>react</p>
+                    <p>能熟练使用react或者react native</p>
+                </div>
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/Webpack.png" alt=""></p>
+                    <p>git,svg,webpack</p>
+                    <p>优化工作流程，提高效率</p>
+                </div>
+                <div class="part col-md-3 col-xs-6">
+                    <p><img src="icons/nodejs.png" alt=""></p>
+                    <p>nodejs</p>
+                    <p>熟悉常用的的api,Express搭建应用的后端程序</p>
+                </div>
+            </div>
+        </section>
+    
+    <section class="floor" id="floor4">
+          <img src="./images/b4.jpg" alt="" class="floor4_bgi">
+            <h3>我的作品</h3>
+            <p class="intro text-center">清晰的思路，规范的格式，丰富的展现。</p>
+            <p class="intro text-center">前端三大准则：动手，动手，谨记前面两项。</p>
+         <!--    <hr> -->
+            <div class="container">
+                <div class="bgbox col-md-3 col-xs-6">
+                    <img src="./images/c6.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                            <a href="project/react/index.html">
+                                <h4>react新闻 <p>点击展示DEMO</p></h4>
+                               
+                                <p></p>
+                                 <img src="./images/react.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgbox col-md-3 col-xs-6">
+                    <img src="./images/c1.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                             <a href="project/shoping/index2.html">
+                                <h4>人人购</h4>
+                                <p></p>
+                                <p>点击展示DEMO</p>
+                                <img src="./images/shoping.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="bgbox col-md-3 col-xs-6">
+                    <img src="./images/c2.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                            <a href="project/小球横飞/小球横飞.html">
+                                
+                                <h4>小球横飞</h4>
+                                <p></p>
+                                <p>点击展示DEMO</p>
+                                 <img src="./images/fly_ball.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="bgbox  col-md-3 col-xs-6">
+                    <img src="./images/c3.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                           <a href="project/技能栈/技能栈.html">
+                                <h4>技能栈</h4>
+                                <p></p>
+                                <p>点击展示DEMO</p>
+                                 <img src="./images/skill.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgbox col-md-3 col-xs-6">
+                    <img src="./images/c4.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                            <a href="project/贪吃蛇/贪吃蛇.html">
+                                <h4>贪吃蛇</h4>
+                                <p>点击展示DEMO</p>
+                                <img src="./images/snax.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgbox col-md-3 col-xs-6">
+                    <img src="./images/c5.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                            <a href="project/宠物网/宠物网.html">
+                                <h4>宠物网</h4>
+                                <p></p>
+                                <p>点击展示DEMO</p>
+                                  <img src="./images/animal.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bgbox col-md-3 col-xs-6">
+                    <img src="./images/c7.jpg" alt="">
+                    <div class="cover_box">
+                        <div class="cover_text">
+                            <a href="project/放大镜/放大镜.html">
+                                <h4>放大镜</h4>
+                                <p></p>
+                                <p>点击展示DEMO</p>
+                                  <img src="./images/cover.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+                
+
+            </div>
+        </section>
+     <section class="floor" id="floor5">
+          <img src="./images/floor5.jpg" alt="" class="floor5_bgi">
+            <h3>技能水平</h3>
+            <p class="intro text-center"></p>  
+            <div class="intro text-center margin_bot">掌握JavaScript语言</div>
+            <div class="intro text-center margin_bot">掌握HTML+CSS网页布局与样式，熟悉HTML5与CSS3.0</div>
+            <div class="intro text-center margin_bot">掌握Bootstrap、jQuery库，可实现页面的基本特效</div>
+            <div class="intro text-center margin_bot">熟悉React、vue等框架</div>
+            <div class="intro text-center margin_bot">掌握React Native</div>
+            <div class="intro text-center margin_bot">掌握微信小程序开发</div>
+            <div class="intro text-center margin_bot"> 熟悉Ajax异步请求</div>
+            <div class="intro text-center margin_bot"> 对WebStorm、sublime等前端工具的使用有基本了解</div>
+            <div class="intro text-center margin_bot"> 了解XML、HTTP协议等</div>
+            <div class="intro text-center margin_bot"> 了解node后端,熟悉npm管理,熟悉express框架；</div>
+            <div class="intro text-center margin_bot"> 使用git,svg,webpack工具</div>
+
+        </section>
+
+         <section class="floor" id="floor6">
+           <!--   <img src="./images/floor4.jpg" alt="" class="floor6_bgi"> -->
+            <h3>我的经历</h3>
+            <hr>
+            <div class="container">
+                <div class="row margin_bot">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-4">2017年6月至2017年11月</div>
+                    <div class="col-md-4">
+                        <h5>优众联电子科技有限公司</h5>参与公司项目产品中的网页功能设计, 交互结构搭建;配合UI完成项目页面的设计与搭建;设计及实现前后端的数据交互，对代码质量及进度负责;配合产品和UI,改善用户体验；</div>
+                     <div class="col-md-2"></div>
+                    </div>
+                 <div class="row margin_bot">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-4">2016年5月至2017年6月</div>
+                    <div class="col-md-4"><h5>厦门赛恩斯系统有限公司</h5>,负责页面制作,改版重构,PSD切图后,构建页面框架, 利用JS、CSS3书写前端功能，让页面更充实丰富, 并将代码上传到代码托管平台上；</div>
+                     <div class="col-md-2"></div>
+                    </div>
+                   
+                
+                     <div class="contact">想了解更多的我</div>
+                     <div class=" text-center "><h5>请联系我</h5></div>
+                <div class="container ani">
+                    <img src="icons/monkey.png" alt="程序袁">
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

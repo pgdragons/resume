@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 不会被缩放 -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>news</title>
+	<link rel="stylesheet" href="./src/css/comom.css">
+	<!-- pc端的样式 -->
+	<link rel="stylesheet" href="./src/css/main.css">
+		<!-- mobile端的样式 -->
+	<link rel="stylesheet" href="./src/css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+	 <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+			  <!--引入swiper.js  -->
+	<link rel="stylesheet" href="./src/lib/swiper/css/swiper-3.4.2.min.css">
+	
+</head>
+<body>
+	<div id="box"></div>
+	<script type="text/javascript" src="./src/bundle.js"></script>
+</body>
+</html>
+<script src="./src/lib/swiper/js/swiper.js"></script>
+	<script src="./src/lib/jquery.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 4,
+        autoplay:2000,
+        paginationClickable: true,
+        spaceBetween: 30,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+    </script>

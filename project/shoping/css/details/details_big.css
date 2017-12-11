@@ -1,0 +1,97 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		.h2{
+			width: 300px;
+			height: 100px;
+			background-color: #FF9900;
+			position: absolute;
+			text-align: center;
+			line-height: 100px;
+			left:130px; 
+			color: #fff;
+			font-weight: 700;
+			cursor: pointer;
+		}
+		#wrap{
+			width: 305px;
+			margin-top: 150px;
+			margin-left: 50px;
+			border:2px solid #FF9900;
+		}
+		#boxd{
+			width: 300px;
+			height: 300px;
+			position: relative;
+		}
+		#spec-img img{
+			width: 300px;
+			height: 300px;
+		}
+		#spec-img{
+			position: relative;
+			border-bottom: 1px solid #999;
+		}
+		#spec-img .deck{
+			width: 150px;
+			height: 150px;
+			background-color: rgba(0,200,200,0.5);
+			position: absolute;
+			left: 0;
+			top:0;
+			display: none;
+			cursor: move;
+		}
+		#detail-img{
+			width: 530px;
+			height: 530px;
+			overflow: hidden;
+			position: absolute;
+			top: -87px;
+			left: 345px;
+			border:1px solid gray;
+			display: none;
+		}
+		#detail-img img{
+			position: absolute;
+			left: 0;
+			top : 0;
+			z-index: 1000;
+		}
+		.spec-list{
+			position: relative;
+			height: 56px;
+			margin-top: 20px;
+		}
+		.spec-list .prev{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -16px;
+		}
+		.spec-list .next{
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -16px;
+		}
+		#spec-list{
+			width: 210px;
+			position: absolute;
+			left: 50%;
+			margin-left: -105px;
+			overflow: hidden;
+		}
+		#spec-list ul{
+			position: relative;
+			left: 0;
+			width: 300%;
+		}
+		#spec-list li{
+			float: left;
+			margin: 0 8px;
+		}

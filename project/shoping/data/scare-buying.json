@@ -1,0 +1,10 @@
+{
+  "scareBuying":[
+    {"imgName":"jdContentImg1.jpg","info":"联想ZUK Edge 臻享版 6G+64G 陶瓷白 全网通4G手机 双卡双待","nowMoney":1999.0,"price":2699.0},
+    {"imgName":"jdContentImg2.jpg","info":"戴尔 热血游匣2游戏本","nowMoney":3858.0,"price":4525.0},
+    {"imgName":"jdContentImg3.jpg","info":"58英寸液晶电视58E6000","nowMoney":4899.0,"price":5200.0},
+    {"imgName":"jdContentImg4.jpg","info":"香浓 雀巢咖啡","nowMoney":32.8,"price":35.3},
+    {"imgName":"jdContentImg5.jpg","info":"美宜畅纯牛奶饮品 原味 338ml*10 ","nowMoney":43.2,"price":46.2},
+    {"imgName":"jdContentImg6.jpg"}
+  ]
+}

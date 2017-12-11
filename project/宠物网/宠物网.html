@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin: 0;
+	padding: 0;
+	}
+	.box{
+		height: 100px;
+		background-color: black;
+		border-top: 2px solid red;
+		overflow: hidden;
+	}
+	ul{
+		width: 1000px;
+		list-style: none;
+			height: 40px;
+			/*width: 100%;*/
+		 margin:0 auto;
+	}
+	.box li .a1{
+		color: black;
+		background-color:white ;
+	}
+	/*我用系选择器怎么没效果*/
+/*	.box ul li:first-child{
+		color: black;
+		background-color:white ;
+	}*/
+	 ul li{
+	 /*	height: 40px;*/
+	 	/*margin: 0 auto;*/
+	 	/*margin-top: 50px;*/
+	 }
+	ul li a{
+		height: 40px;
+		width: 200px;
+		border-top:1px solid orange;
+		font-size: 30px;
+		color: white;
+		background-color: #000;
+		float: left;
+		text-align: center;
+		
+		text-decoration: none;
+	}
+		ul li a:hover{
+		color: black;
+		background-color: white;
+	}
+	.box2{
+		width: 880px;
+		height: 1450px;
+		margin:30px auto;
+		/*height: 200px;*/
+		/*background-color: pink;*/
+
+	}
+	.img-1{
+		width: 400px;
+		
+		/*background-color: pink;*/
+		float: left;
+		margin: 20px 20px ;
+		overflow: hidden;	
+		/*margin:0 auto;*/
+	}
+	.img-1 img{
+		width: 400px;
+	}
+	/*.img-1 .img-1-btn{
+		height: 40px;
+		width: 200px;
+		color: white;
+		background-color: red;
+		float: left;
+	}*/
+	.img-1 .img-1-btn a{
+		float: left;
+		height: 40px;
+		width: 150px;
+	
+		color: white;
+		text-align: center;
+			margin-top: 10px;
+			padding-top: 10px;
+		background-color: red;
+		font-size: 20px;
+		text-decoration: none;
+
+	
+	}
+	.img-1 .img-1-btn a:hover{
+		color: white;
+		background-color: black;
+	}
+	.box3{
+		height: 100px;
+		background-color: black;
+		margin-top: 50px;
+	}
+
+	.box3 .box3-1{
+		width: 250px;
+		/*height: 300px;*/
+		margin:0 auto;
+		overflow: hidden;
+
+
+	}
+	.box3 .box3-1 .ct-us{
+		color: white;
+		width: 140px;
+		/*float: left;*/
+		font-size: 25px;
+		/*background-color: pink;*/
+		margin: 0 auto;
+
+	}
+/*	.box3 .box3-1 .img-4{
+		background-color: pink;
+		
+	}*/
+	.box3 .box3-1 img:hover{
+		opacity: 0.5;
+
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><a href="" class="a1">HOME</a></li>
+			<li><a href="">ABOUT US</a></li>
+			<li><a href="">SERVICES</a></li>
+			<li><a href="">GALLERY</a></li>
+			<li><a href="">CONTACT</a></li>
+		</ul>
+	</div>
+	<div class="box2">
+		<div class="img-1">
+			<img src="images/pic.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>
+		
+		<div class="img-1">
+			<img src="images/pic1.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>
+		<div class="img-1">
+			<img src="images/pic2.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>
+		<div class="img-1">
+			<img src="images/pic.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>
+			<div class="img-1">
+			<img src="images/pic2.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>	<div class="img-1">
+			<img src="images/pic1.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>	<div class="img-1">
+			<img src="images/pic1.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>	<div class="img-1">
+			<img src="images/pic2.jpg" alt="" />
+			<p> &nbsp&nbsp Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
+			<div class="img-1-btn"><a href="">READ MORE</a></div>
+		</div>
+	</div>
+	<div class="box3">
+		
+		<div class="box3-1">
+			<div class="ct-us">contact us</div>
+			<div class="img-4">
+			<img src="images/tw.png" alt="" />
+			<img src="images/g+.png" alt="" />
+			<img src="images/fb.png" alt="" />
+			<img src="images/rss.png" alt="" />
+		</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>

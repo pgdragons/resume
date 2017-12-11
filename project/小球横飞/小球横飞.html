@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		canvas{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas" width="500" height="500"></canvas>
+	<script type="text/javascript" src="./lib/Ball.js"></script>
+	<script type="text/javascript" src="./lib/randomColor.js"></script>
+	<script type="text/javascript" src="./lib/randomNum.js"></script>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		// 准备一个数组,将所有的创建好的Ball对象保存起来
+		var balls = [];
+		// 将小球的创建放置到canvas的触摸事件发生的方法中
+		canvas.onmousemove = function(e){
+			for(var i=0;i<10;i++){
+				// 获取随机颜色
+				var color = getRandomColor();
+				// 获取随机数值
+				var radius = getRandomNum(20) + 10;
+				var decreaseX = getRandomNum(2);
+				var decreaseY = getRandomNum(2);
+				var ball = new Ball({
+					color:color,
+					x:e.offsetX,
+					y:e.offsetY,
+					radius:radius,
+					decreaseX:decreaseX,
+					decreaseY:decreaseY
+				});
+				// 将创建好的ball对象添加到数组中去
+				balls.push(ball);
+			}
+		}
+		// 当页面一打开时,这个update就应该被调用
+		setInterval(function(){
+			canvas.width = canvas.width;
+			canvas.height = canvas.height;
+			for(var i=0;i<balls.length;i++){
+				balls[i].update();
+			}
+			for(var j=0;j<balls.length;j++){
+				balls[j].render(ctx);
+			}
+		},80);
+	</script>
+</body>
+</html>
